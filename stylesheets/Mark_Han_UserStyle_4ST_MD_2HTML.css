@@ -9,603 +9,607 @@ body
     .markdown-body kbd：
     */
 
-    <style>
-    * {
-      box-sizing: border-box;
-
-  }
-
-  body {
-
-      width: 65%;	/*此处原先为980px 26 Apr., 2016*/
-      margin-right: auto;
-      margin-left: auto;
-      background-color: #f0f0f0;
-      /*background-image: url("http://www.transparenttextures.com/patterns/cartographer.png");*/
-      
-  }
-
-  body .markdown-body {
-      padding: 105px 45px;/*padding adjusted，top=bottum=105;left=right=45*/
-      /*border: 1px dashed #3C78C2;solid #ddd 改为dashed #3C78C227 Apr., 2016*/
-      /*border-radius: 50px;3px改为5px 27 Apr., 2016*/
-      word-wrap: break-word;
-      /*background-color: #f0f0f0;添加内容区背景色*/
-      /*box-shadow:0px -3px 18px #ADBDC6;*/
-      /*box-shadow: inset, 4px 0 0 rgba(102, 128, 153, 0.05) ;*/
-      /*添加内容区阴影*/
-  }
-
-  pre {
-      font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  }
-
-  .markdown-body {
-      -webkit-text-size-adjust: 100%;
-      text-size-adjust: 100%;
-      color: #333;
-      font-family: "Microsoft Yahei", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-      /*默认Helvetica Neue，不支持中文，现改为雅黑 26 Apr., 2016*/
-      font-size: 16px;
-      line-height: 1.6;
-      word-wrap: break-word;
-  }
-
-  .markdown-body a {
-      background-color: transparent;/*超链接底色，未修改*/
-  }
-
-  .markdown-body a:active,
-  .markdown-body a:hover {
-      color: #e74f4e;
-      outline: 0;
-  }
-
-  .markdown-body strong {
-      font-weight: italic;
-  }
-
-  .markdown-body h1 {
-      color:#e74f4e;
-      /*改变一级标题的颜色*/
-      font-size: 2em;
-      margin: 0.67em 0;
-  }
-
-  .markdown-body img {
-      border: 0;
-  }
-
-  .markdown-body hr {
-      box-sizing: content-box;
-      height: 0;
-  }
-
-
-  .markdown-body pre {
-      overflow: auto;
-  }
-
-  .markdown-body code,
-  .markdown-body kbd,
-  .markdown-body pre {
-      font-family: "Microsoft Yahei", "Segoe UI";
-      font-size: 1em;
-  }
-
-  .markdown-body input {
-      color: inherit;
-      font: inherit;
-      margin: 0;
-  }
-
-  .markdown-body html input[disabled] {
-      cursor: default;
-  }
-
-  .markdown-body input {
-      line-height: normal;
-  }
-
-  .markdown-body input[type="checkbox"] {
-      box-sizing: border-box;
-      padding: 0;
-  }
-
-  .markdown-body table {
-      border-collapse: collapse;
-      border-spacing: 0;
-  }
-
-  .markdown-body td,
-  .markdown-body th {
-      padding: 0;
-  }
-
-  .markdown-body input {
-      font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
-  }
-
-  .markdown-body a {
-      color: #4078c0;
-      text-decoration: none;
-  }
-
-  .markdown-body a:hover,
-  .markdown-body a:active {
-      text-decoration: underline;
-  }
-
-  .markdown-body hr {
-      height: 0;
-      margin: 15px 0;
-      overflow: hidden;
-      background: transparent;
-      border: 0;
-      border-bottom: 1px solid #ddd;
-  }
-
-  .markdown-body hr:before {
-      display: table;
-      content: "";
-  }
-
-  .markdown-body hr:after {
-      display: table;
-      clear: both;
-      content: "";
-  }
-
-  .markdown-body h1,
-  .markdown-body h2,
-  .markdown-body h3,
-  .markdown-body h4,
-  .markdown-body h5,
-  .markdown-body h6 {
-      color: #e74f4e
-      margin-top: 15px;
-      margin-bottom: 15px;
-      line-height: 1.1;
-  }
-
-  .markdown-body h1 {
-      font-size: 30px;
-  }
-
-  .markdown-body h2 {
-      font-size: 21px;
-  }
-
-  .markdown-body h3 {
-      font-size: 16px;
-  }
-
-  .markdown-body h4 {
-      font-size: 14px;
-  }
-
-  .markdown-body h5 {
-      font-size: 12px;
-  }
-
-  .markdown-body h6 {
-      font-size: 11px;
-  }
-
-  .markdown-body blockquote {
-      margin: 0;
-  }
-
-  .markdown-body ul,
-  .markdown-body ol {
-      padding: 0;
-      margin-top: 0;
-      margin-bottom: 0;
-  }
-
-  .markdown-body ol ol,
-  .markdown-body ul ol {
-      list-style-type: lower-roman;
-  }
-
-  .markdown-body ul ul ol,
-  .markdown-body ul ol ol,
-  .markdown-body ol ul ol,
-  .markdown-body ol ol ol {
-      list-style-type: lower-alpha;
-  }
-
-  .markdown-body dd {
-      margin-left: 0;
-  }
-
-  .markdown-body code {
-      font-family: "Microsoft Yahei", "Segoe UI";
-      font-size: 12px;
-  }
-
-  .markdown-body pre {
-      margin-top: 0;
-      margin-bottom: 0;
-      font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  }
-
-  .markdown-body .select::-ms-expand {
-      opacity: 0;
-  }
-
-  .markdown-body .octicon {
-      font: normal normal normal 16px/1 octicons-anchor;
-      display: inline-block;
-      text-decoration: none;
-      text-rendering: auto;
-      -webkit-font-smoothing: antialiased;
-      -moz-osx-font-smoothing: grayscale;
-      -webkit-user-select: none;
-      -moz-user-select: none;
-      -ms-user-select: none;
-      user-select: none;
-  }
-
-  .markdown-body .octicon-link:before {
-      content: '\f05c';
-  }
-
-  .markdown-body:before {
-      display: table;
-      content: "";
-  }
-
-  .markdown-body:after {
-      display: table;
-      clear: both;
-      content: "";
-  }
-
-  .markdown-body>*:first-child {
-      margin-top: 0 !important;
-  }
-
-  .markdown-body>*:last-child {
-      margin-bottom: 0 !important;
-  }
-
-  .markdown-body a:not([href]) {
-      color: inherit;
-      text-decoration: none;
-  }
-
-  .markdown-body .anchor {
-      display: inline-block;
-      padding-right: 2px;
-      margin-left: -18px;
-  }
-
-  .markdown-body .anchor:focus {
-      outline: none;
-  }
-
-  .markdown-body h1,
-  .markdown-body h2,
-  .markdown-body h3,
-  .markdown-body h4,
-  .markdown-body h5,
-  .markdown-body h6 {
-      margin-top: 1em;
-      margin-bottom: 16px;
-      font-weight: bold;
-      line-height: 1.4;
-  }
-
-  .markdown-body h1 .octicon-link,
-  .markdown-body h2 .octicon-link,
-  .markdown-body h3 .octicon-link,
-  .markdown-body h4 .octicon-link,
-  .markdown-body h5 .octicon-link,
-  .markdown-body h6 .octicon-link {
-      color: #000;
-      vertical-align: middle;
-      visibility: hidden;
-  }
-
-  .markdown-body h1:hover .anchor,
-  .markdown-body h2:hover .anchor,
-  .markdown-body h3:hover .anchor,
-  .markdown-body h4:hover .anchor,
-  .markdown-body h5:hover .anchor,
-  .markdown-body h6:hover .anchor {
-      text-decoration: none;
-  }
-
-  .markdown-body h1:hover .anchor .octicon-link,
-  .markdown-body h2:hover .anchor .octicon-link,
-  .markdown-body h3:hover .anchor .octicon-link,
-  .markdown-body h4:hover .anchor .octicon-link,
-  .markdown-body h5:hover .anchor .octicon-link,
-  .markdown-body h6:hover .anchor .octicon-link {
-      visibility: visible;
-  }
-
-  .markdown-body h1 {
-      padding-bottom: 0.3em;
-      font-size: 2.25em;
-      line-height: 1.2;
-      border-bottom: 1px solid #eee;
-  }
-
-  .markdown-body h1 .anchor {
-      line-height: 1;
-  }
-
-  .markdown-body h2 {
-      color: #2c3e50;
-      padding-bottom: 0.3em;
-      font-size: 1.75em;
-      line-height: 1.225;
-      border-bottom: 1px solid #eee;
-  }
-
-  .markdown-body h2 .anchor {
-      line-height: 1;
-  }
-
-  .markdown-body h3 {
-      color:#565656;
-      font-size: 1.5em;
-      line-height: 1.43;
-  }
-
-  .markdown-body h3 .anchor {
-      line-height: 1.2;
-  }
-
-  .markdown-body h4 {
-      color:#777777;
-      font-size: 1.25em;
-  }
-
-  .markdown-body h4 .anchor {
-      line-height: 1.2;
-  }
-
-  .markdown-body h5 {
-      font-size: 1em;
-  }
-
-  .markdown-body h5 .anchor {
-      line-height: 1.1;
-  }
-
-  .markdown-body h6 {
-      font-size: 1em;
-      color: #777;
-  }
-
-  .markdown-body h6 .anchor {
-      line-height: 1.1;
-  }
-
-  .markdown-body p,
-  .markdown-body blockquote,
-  .markdown-body ul,
-  .markdown-body ol,
-  .markdown-body dl,
-  .markdown-body table,
-  .markdown-body pre {
-      margin-top: 4px;
-      margin-bottom: 16px;
-  }
-
-  .markdown-body hr {/*水平线样式*/
-      height: 1px;
-      padding: 0;
-      margin: 16px 0;
-      background-color: #FFF;
-      border: 0 none;
-      border-top:1px solid #C9C9C9;;
-  }
-
-  .markdown-body ul,
-  .markdown-body ol {
-      padding-left: 2em;
-  }
-
-  .markdown-body ul ul,
-  .markdown-body ul ol,
-  .markdown-body ol ol,
-  .markdown-body ol ul {
-      margin-top: 0;
-      margin-bottom: 0;
-  }
-
-  .markdown-body li>p {
-      margin-top: 16px;
-  }
-
-  .markdown-body dl {
-      padding: 0;
-  }
-
-  .markdown-body dl dt {
-      padding: 0;
-      margin-top: 16px;
-      font-size: 1em;
-      font-style: italic;
-      font-weight: bold;
-  }
-
-  .markdown-body dl dd {
-      padding: 0 16px;
-      margin-bottom: 16px;
-  }
+<style> * {
+    box-sizing: border-box;
+}
+
+body {
+    width: 50%;
+    /*此处原先为980px 26 Apr., 2016*/
+    margin-right: auto;
+    margin-left: auto;
+    background-color: #f0f0f0;
+    /*background-image: url("http://www.transparenttextures.com/patterns/cartographer.png");*/
+}
+
+body .markdown-body {
+    padding: 105px 45px;
+    /*padding adjusted，top=bottum=105;left=right=45*/
+    /*border: 1px dashed #3C78C2;solid #ddd 改为dashed #3C78C227 Apr., 2016*/
+    /*border-radius: 50px;3px改为5px 27 Apr., 2016*/
+    word-wrap: break-word;
+    /*background-color: #f0f0f0;添加内容区背景色*/
+    /*box-shadow:0px -3px 18px #ADBDC6;*/
+    /*box-shadow: inset, 4px 0 0 rgba(102, 128, 153, 0.05) ;*/
+    /*添加内容区阴影*/
+}
+
+pre {
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body {
+    -webkit-text-size-adjust: 100%;
+    text-size-adjust: 100%;
+    color: #333;
+    font-family: "Microsoft Yahei", Helvetica, "Segoe UI", Arial, freesans, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+    /*默认Helvetica Neue，不支持中文，现改为雅黑 26 Apr., 2016*/
+    font-size: 16px;
+    line-height: 1.6;
+    word-wrap: break-word;
+}
+
+.markdown-body a {
+    background-color: transparent;
+    /*超链接底色，未修改*/
+}
+
+.markdown-body a:active,
+.markdown-body a:hover {
+    color: #e74f4e;
+    outline: 0;
+}
+
+.markdown-body strong {
+    font-weight: italic;
+}
+
+.markdown-body h1 {
+    color: #e74f4e;
+    /*改变一级标题的颜色*/
+    font-size: 2em;
+    margin: 0.67em 0;
+}
+
+.markdown-body img {
+    border: 0;
+}
+
+.markdown-body hr {
+    box-sizing: content-box;
+    height: 0;
+}
+
+.markdown-body pre {
+    overflow: auto;
+}
+
+.markdown-body code,
+.markdown-body kbd,
+.markdown-body pre {
+    font-family: "Microsoft Yahei", "Segoe UI";
+    font-size: 1em;
+}
+
+.markdown-body input {
+    color: inherit;
+    font: inherit;
+    margin: 0;
+}
+
+.markdown-body html input[disabled] {
+    cursor: default;
+}
+
+.markdown-body input {
+    line-height: normal;
+}
+
+.markdown-body input[type="checkbox"] {
+    box-sizing: border-box;
+    padding: 0;
+}
+
+.markdown-body table {
+    border-collapse: collapse;
+    border-spacing: 0;
+}
+
+.markdown-body td,
+.markdown-body th {
+    padding: 0;
+}
+
+.markdown-body input {
+    font: 13px / 1.4 Helvetica, arial, nimbussansl, liberationsans, freesans, clean, sans-serif, "Apple Color Emoji", "Segoe UI Emoji", "Segoe UI Symbol";
+}
+
+.markdown-body a {
+    color: #4078c0;
+    text-decoration: none;
+}
+
+.markdown-body a:hover,
+.markdown-body a:active {
+    text-decoration: underline;
+}
+
+.markdown-body hr {
+    height: 0;
+    margin: 15px 0;
+    overflow: hidden;
+    background: transparent;
+    border: 0;
+    border-bottom: 1px solid #ddd;
+}
+
+.markdown-body hr:before {
+    display: table;
+    content: "";
+}
+
+.markdown-body hr:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    color: #e74f4e margin-top: 15px;
+    margin-bottom: 15px;
+    line-height: 1.1;
+}
+
+.markdown-body h1 {
+    font-size: 30px;
+}
+
+.markdown-body h2 {
+    font-size: 21px;
+}
+
+.markdown-body h3 {
+    font-size: 16px;
+}
+
+.markdown-body h4 {
+    font-size: 14px;
+}
+
+.markdown-body h5 {
+    font-size: 12px;
+}
+
+.markdown-body h6 {
+    font-size: 11px;
+}
+
+.markdown-body blockquote {
+    margin: 0;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+    padding: 0;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.markdown-body ol ol,
+.markdown-body ul ol {
+    list-style-type: lower-roman;
+}
+
+.markdown-body ul ul ol,
+.markdown-body ul ol ol,
+.markdown-body ol ul ol,
+.markdown-body ol ol ol {
+    list-style-type: lower-alpha;
+}
+
+.markdown-body dd {
+    margin-left: 0;
+}
+
+.markdown-body code {
+    font-family: "Microsoft Yahei", "Segoe UI";
+    font-size: 12px;
+}
+
+.markdown-body pre {
+    margin-top: 0;
+    margin-bottom: 0;
+    font: 12px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+}
+
+.markdown-body .select::-ms-expand {
+    opacity: 0;
+}
+
+.markdown-body .octicon {
+    font: normal normal normal 16px/1 octicons-anchor;
+    display: inline-block;
+    text-decoration: none;
+    text-rendering: auto;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+}
+
+.markdown-body .octicon-link:before {
+    content: '\f05c';
+}
+
+.markdown-body:before {
+    display: table;
+    content: "";
+}
+
+.markdown-body:after {
+    display: table;
+    clear: both;
+    content: "";
+}
+
+.markdown-body>*:first-child {
+    margin-top: 0 !important;
+}
+
+.markdown-body>*:last-child {
+    margin-bottom: 0 !important;
+}
+
+.markdown-body a:not([href]) {
+    color: inherit;
+    text-decoration: none;
+}
+
+.markdown-body .anchor {
+    display: inline-block;
+    padding-right: 2px;
+    margin-left: -18px;
+}
+
+.markdown-body .anchor:focus {
+    outline: none;
+}
+
+.markdown-body h1,
+.markdown-body h2,
+.markdown-body h3,
+.markdown-body h4,
+.markdown-body h5,
+.markdown-body h6 {
+    margin-top: 1em;
+    margin-bottom: 16px;
+    font-weight: bold;
+    line-height: 1.4;
+}
+
+.markdown-body h1 .octicon-link,
+.markdown-body h2 .octicon-link,
+.markdown-body h3 .octicon-link,
+.markdown-body h4 .octicon-link,
+.markdown-body h5 .octicon-link,
+.markdown-body h6 .octicon-link {
+    color: #000;
+    vertical-align: middle;
+    visibility: hidden;
+}
+
+.markdown-body h1:hover .anchor,
+.markdown-body h2:hover .anchor,
+.markdown-body h3:hover .anchor,
+.markdown-body h4:hover .anchor,
+.markdown-body h5:hover .anchor,
+.markdown-body h6:hover .anchor {
+    text-decoration: none;
+}
+
+.markdown-body h1:hover .anchor .octicon-link,
+.markdown-body h2:hover .anchor .octicon-link,
+.markdown-body h3:hover .anchor .octicon-link,
+.markdown-body h4:hover .anchor .octicon-link,
+.markdown-body h5:hover .anchor .octicon-link,
+.markdown-body h6:hover .anchor .octicon-link {
+    visibility: visible;
+}
+
+.markdown-body h1 {
+    padding-bottom: 0.3em;
+    font-size: 2.25em;
+    line-height: 1.2;
+    border-bottom: 1px solid #eee;
+}
+
+.markdown-body h1 .anchor {
+    line-height: 1;
+}
+
+.markdown-body h2 {
+    color: #2c3e50;
+    padding-bottom: 0.3em;
+    font-size: 1.75em;
+    line-height: 1.225;
+    border-bottom: 1px solid #eee;
+}
+
+.markdown-body h2 .anchor {
+    line-height: 1;
+}
+
+.markdown-body h3 {
+    color: #565656;
+    font-size: 1.5em;
+    line-height: 1.43;
+}
+
+.markdown-body h3 .anchor {
+    line-height: 1.2;
+}
+
+.markdown-body h4 {
+    color: #777777;
+    font-size: 1.25em;
+}
+
+.markdown-body h4 .anchor {
+    line-height: 1.2;
+}
+
+.markdown-body h5 {
+    font-size: 1em;
+}
+
+.markdown-body h5 .anchor {
+    line-height: 1.1;
+}
+
+.markdown-body h6 {
+    font-size: 1em;
+    color: #777;
+}
+
+.markdown-body h6 .anchor {
+    line-height: 1.1;
+}
+
+.markdown-body p,
+.markdown-body blockquote,
+.markdown-body ul,
+.markdown-body ol,
+.markdown-body dl,
+.markdown-body table,
+.markdown-body pre {
+    margin-top: 4px;
+    margin-bottom: 16px;
+}
+
+.markdown-body hr {
+    /*水平线样式*/
+    height: 1px;
+    padding: 0;
+    margin: 16px 0;
+    background-color: #FFF;
+    border: 0 none;
+    border-top: 1px solid #C9C9C9;
+    ;
+}
+
+.markdown-body ul,
+.markdown-body ol {
+    padding-left: 2em;
+}
+
+.markdown-body ul ul,
+.markdown-body ul ol,
+.markdown-body ol ol,
+.markdown-body ol ul {
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.markdown-body li>p {
+    margin-top: 16px;
+}
+
+.markdown-body dl {
+    padding: 0;
+}
+
+.markdown-body dl dt {
+    padding: 0;
+    margin-top: 16px;
+    font-size: 1em;
+    font-style: italic;
+    font-weight: bold;
+}
+
+.markdown-body dl dd {
+    padding: 0 16px;
+    margin-bottom: 16px;
+}
+
+
 /*引用区的格式控制：
 margin:外边距;
 padding：内边距
 color：文字颜色
 border-left：引用区前面（左边）的竖线
 background: 引用区背景颜色*/
+
 .markdown-body blockquote {
-   margin: 5px 15px ;
-   padding: 5px 15px;
-   color: #777;
-   border-left: 4px solid #BCBCBC;
-   background: #E8E8E8;
+    margin: 5px 15px;
+    padding: 5px 15px;
+    color: #777;
+    border-left: 4px solid #BCBCBC;
+    background: #E8E8E8;
 }
 
 .markdown-body blockquote>:first-child {
-  margin-top: 0;
+    margin-top: 0;
 }
 
 .markdown-body blockquote>:last-child {
-  margin-bottom: 0;
+    margin-bottom: 0;
 }
 
 .markdown-body table {
-  display: block;
-  width: 100%;
-  overflow: auto;
-  word-break: normal;
-  word-break: keep-all;
+    display: block;
+    width: 100%;
+    overflow: auto;
+    word-break: normal;
+    word-break: keep-all;
 }
 
 .markdown-body table th {
-  font-weight: bold;
+    font-weight: bold;
 }
 
 .markdown-body table th,
 .markdown-body table td {
-  padding: 6px 13px;
-  border: 1px solid #ddd;
+    padding: 6px 13px;
+    border: 1px solid #ddd;
 }
 
 .markdown-body table tr {
-  background-color: #fff;
-  border-top: 1px solid #ccc;
+    background-color: #fff;
+    border-top: 1px solid #ccc;
 }
 
 .markdown-body table tr:nth-child(2n) {
-  background-color: #f8f8f8;
+    background-color: #f8f8f8;
 }
 
 .markdown-body img {
-   clear: both; 
-   display: block; 
-   margin:auto;/*使图片居中显示http://www.jb51.net/css/134690.html*/ 
-   margin-top: 1.5em;
-   margin-top: 1.5em;
-   max-width: 75%;/*图片的宽度，默认100%已经调整为75% 28 Apr., 2016*/
-   box-sizing: content-box;
-   /*background-color: #fff;*/
-   box-shadow:3px 3px 8px #ADBDC6;/*位图片添加阴影，HTML5语法*/
-
+    clear: both;
+    display: block;
+    margin: auto;
+    /*使图片居中显示http://www.jb51.net/css/134690.html*/
+    margin-top: 1.5em;
+    margin-top: 1.5em;
+    max-width: 75%;
+    /*图片的宽度，默认100%已经调整为75% 28 Apr., 2016*/
+    box-sizing: content-box;
+    /*background-color: #fff;*/
+    box-shadow: 3px 3px 8px #ADBDC6;
+    /*位图片添加阴影，HTML5语法*/
 }
 
-
 .markdown-body code {
-  padding: 0;
-  padding-top: 0.2em;
-  padding-bottom: 0.2em;
-  margin: 0;
-  font-size: 85%;
-  background-color: rgba(49,109,60,0.15);/*行内代码背景色*/
-  border-radius: 3px;
+    padding: 0;
+    padding-top: 0.2em;
+    padding-bottom: 0.2em;
+    margin: 0;
+    font-size: 85%;
+    background-color: rgba(49, 109, 60, 0.15);
+    /*行内代码背景色*/
+    border-radius: 3px;
 }
 
 .markdown-body code:before,
 .markdown-body code:after {
-  letter-spacing: -0.2em;
-  content: "\00a0";
+    letter-spacing: -0.2em;
+    content: "\00a0";
 }
 
 .markdown-body pre>code {
-  padding: 0;
-  margin: 0;
-  font-size: 100%;
-  word-break: normal;
-  white-space: pre;
-  background: transparent;
-  border: 0;
+    padding: 0;
+    margin: 0;
+    font-size: 100%;
+    word-break: normal;
+    white-space: pre;
+    background: transparent;
+    border: 0;
 }
 
 .markdown-body .highlight {
-  margin-bottom: 16px;
+    margin-bottom: 16px;
 }
 
 .markdown-body .highlight pre,
 .markdown-body pre {
-  padding: 16px;
-  overflow: auto;
-  font-size: 85%;
-  line-height: 1.45;
-  background-color: #f7f7f7;
-  border-radius: 3px;
+    padding: 16px;
+    overflow: auto;
+    font-size: 85%;
+    line-height: 1.45;
+    background-color: #f7f7f7;
+    border-radius: 3px;
 }
 
 .markdown-body .highlight pre {
-  margin-bottom: 0;
-  word-break: normal;
+    margin-bottom: 0;
+    word-break: normal;
 }
 
 .markdown-body pre {
-  word-wrap: normal;
+    word-wrap: normal;
 }
 
 .markdown-body pre code {
-  display: inline;
-  max-width: initial;
-  padding: 0;
-  margin: 0;
-  overflow: initial;
-  line-height: inherit;
-  word-wrap: normal;
-  background-color: transparent;
-  border: 0;
+    display: inline;
+    max-width: initial;
+    padding: 0;
+    margin: 0;
+    overflow: initial;
+    line-height: inherit;
+    word-wrap: normal;
+    background-color: transparent;
+    border: 0;
 }
 
 .markdown-body pre code:before,
 .markdown-body pre code:after {
-  content: normal;
+    content: normal;
 }
 
 .markdown-body kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font-size: 11px;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb;
+    display: inline-block;
+    padding: 3px 5px;
+    font-size: 11px;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
 }
 
 .markdown-body .pl-c {
-  color: #969896;
+    color: #969896;
 }
 
 .markdown-body .pl-c1,
 .markdown-body .pl-s .pl-v {
-  color: #0086b3;
+    color: #0086b3;
 }
 
 .markdown-body .pl-e,
 .markdown-body .pl-en {
-  color: #795da3;
+    color: #795da3;
 }
 
 .markdown-body .pl-s .pl-s1,
 .markdown-body .pl-smi {
-  color: #333;
+    color: #333;
 }
 
 .markdown-body .pl-ent {
-  color: #63a35c;
+    color: #63a35c;
 }
 
 .markdown-body .pl-k {
-  color: #a71d5d;
+    color: #a71d5d;
 }
 
 .markdown-body .pl-pds,
@@ -615,319 +619,1069 @@ background: 引用区背景颜色*/
 .markdown-body .pl-sr .pl-cce,
 .markdown-body .pl-sr .pl-sra,
 .markdown-body .pl-sr .pl-sre {
-  color: #183691;
+    color: #183691;
 }
 
 .markdown-body .pl-v {
-  color: #ed6a43;
+    color: #ed6a43;
 }
 
 .markdown-body .pl-id {
-  color: #b52a1d;
+    color: #b52a1d;
 }
 
 .markdown-body .pl-ii {
-  background-color: #b52a1d;
-  color: #f8f8f8;
+    background-color: #b52a1d;
+    color: #f8f8f8;
 }
 
 .markdown-body .pl-sr .pl-cce {
-  color: #63a35c;
-  font-weight: bold;
+    color: #63a35c;
+    font-weight: bold;
 }
 
 .markdown-body .pl-ml {
-  color: #693a17;
+    color: #693a17;
 }
 
 .markdown-body .pl-mh,
 .markdown-body .pl-mh .pl-en,
 .markdown-body .pl-ms {
-  color: #1d3e81;
-  font-weight: bold;
+    color: #1d3e81;
+    font-weight: bold;
 }
 
 .markdown-body .pl-mq {
-  color: #008080;
+    color: #008080;
 }
 
 .markdown-body .pl-mi {
-  color: #333;
-  font-style: italic;
+    color: #333;
+    font-style: italic;
 }
 
 .markdown-body .pl-mb {
-  color: #333;
-  font-weight: bold;
+    color: #333;
+    font-weight: bold;
 }
 
 .markdown-body .pl-md {
-  background-color: #ffecec;
-  color: #bd2c00;
+    background-color: #ffecec;
+    color: #bd2c00;
 }
 
 .markdown-body .pl-mi1 {
-  background-color: #eaffea;
-  color: #55a532;
+    background-color: #eaffea;
+    color: #55a532;
 }
 
 .markdown-body .pl-mdr {
-  color: #795da3;
-  font-weight: bold;
+    color: #795da3;
+    font-weight: bold;
 }
 
 .markdown-body .pl-mo {
-  color: #1d3e81;
+    color: #1d3e81;
 }
 
 .markdown-body kbd {
-  display: inline-block;
-  padding: 3px 5px;
-  font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
-  line-height: 10px;
-  color: #555;
-  vertical-align: middle;
-  background-color: #fcfcfc;
-  border: solid 1px #ccc;
-  border-bottom-color: #bbb;
-  border-radius: 3px;
-  box-shadow: inset 0 -1px 0 #bbb;
+    display: inline-block;
+    padding: 3px 5px;
+    font: 11px Consolas, "Liberation Mono", Menlo, Courier, monospace;
+    line-height: 10px;
+    color: #555;
+    vertical-align: middle;
+    background-color: #fcfcfc;
+    border: solid 1px #ccc;
+    border-bottom-color: #bbb;
+    border-radius: 3px;
+    box-shadow: inset 0 -1px 0 #bbb;
 }
 
 .markdown-body .plan-price-unit {
-  color: #767676;
-  font-weight: normal;
+    color: #767676;
+    font-weight: normal;
 }
 
 .markdown-body .task-list-item {
-  list-style-type: none;
+    list-style-type: none;
 }
 
 .markdown-body .task-list-item+.task-list-item {
-  margin-top: 3px;
+    margin-top: 3px;
 }
 
 .markdown-body .task-list-item input {
-  margin: 0 0.35em 0.25em -1.6em;
-  vertical-align: middle;
+    margin: 0 0.35em 0.25em -1.6em;
+    vertical-align: middle;
 }
 
 .markdown-body .plan-choice {
-  padding: 15px;
-  padding-left: 40px;
-  display: block;
-  border: 1px solid #e0e0e0;
-  position: relative;
-  font-weight: normal;
-  background-color: #fafafa;
+    padding: 15px;
+    padding-left: 40px;
+    display: block;
+    border: 1px solid #e0e0e0;
+    position: relative;
+    font-weight: normal;
+    background-color: #fafafa;
 }
 
 .markdown-body .plan-choice.open {
-  background-color: #fff;
+    background-color: #fff;
 }
 
 .markdown-body .plan-choice.open .plan-choice-seat-breakdown {
-  display: block;
+    display: block;
 }
 
 .markdown-body .plan-choice-free {
-  border-radius: 3px 3px 0 0;
+    border-radius: 3px 3px 0 0;
 }
 
 .markdown-body .plan-choice-paid {
-  border-radius: 0 0 3px 3px;
-  border-top: 0;
-  margin-bottom: 20px;
+    border-radius: 0 0 3px 3px;
+    border-top: 0;
+    margin-bottom: 20px;
 }
 
 .markdown-body .plan-choice-radio {
-  position: absolute;
-  left: 15px;
-  top: 18px;
+    position: absolute;
+    left: 15px;
+    top: 18px;
 }
 
 .markdown-body .plan-choice-exp {
-  color: #999;
-  font-size: 12px;
-  margin-top: 5px;
+    color: #999;
+    font-size: 12px;
+    margin-top: 5px;
 }
 
 .markdown-body .plan-choice-seat-breakdown {
-  margin-top: 10px;
-  display: none;
+    margin-top: 10px;
+    display: none;
 }
 
-.markdown-body :checked+.radio-label {
-  z-index: 1;
-  position: relative;
-  border-color: #4078c0;
+.markdown-body:checked+.radio-label {
+    z-index: 1;
+    position: relative;
+    border-color: #4078c0;
 }
 
 
 /*github*/
-.codehilite {background-color:#fff;color:#333333;}
-.codehilite .hll {background-color:#ffffcc;}
-.codehilite .c{color:#999988;font-style:italic}
-.codehilite .err{color:#a61717;background-color:#e3d2d2}
-.codehilite .k{font-weight:bold}
-.codehilite .o{font-weight:bold}
-.codehilite .cm{color:#999988;font-style:italic}
-.codehilite .cp{color:#999999;font-weight:bold}
-.codehilite .c1{color:#999988;font-style:italic}
-.codehilite .cs{color:#999999;font-weight:bold;font-style:italic}
-.codehilite .gd{color:#000000;background-color:#ffdddd}
-.codehilite .ge{font-style:italic}
-.codehilite .gr{color:#aa0000}
-.codehilite .gh{color:#999999}
-.codehilite .gi{color:#000000;background-color:#ddffdd}
-.codehilite .go{color:#888888}
-.codehilite .gp{color:#555555}
-.codehilite .gs{font-weight:bold}
-.codehilite .gu{color:#800080;font-weight:bold}
-.codehilite .gt{color:#aa0000}
-.codehilite .kc{font-weight:bold}
-.codehilite .kd{font-weight:bold}
-.codehilite .kn{font-weight:bold}
-.codehilite .kp{font-weight:bold}
-.codehilite .kr{font-weight:bold}
-.codehilite .kt{color:#445588;font-weight:bold}
-.codehilite .m{color:#009999}
-.codehilite .s{color:#dd1144}
-.codehilite .n{color:#333333}
-.codehilite .na{color:teal}
-.codehilite .nb{color:#0086b3}
-.codehilite .nc{color:#445588;font-weight:bold}
-.codehilite .no{color:teal}
-.codehilite .ni{color:purple}
-.codehilite .ne{color:#990000;font-weight:bold}
-.codehilite .nf{color:#990000;font-weight:bold}
-.codehilite .nn{color:#555555}
-.codehilite .nt{color:navy}
-.codehilite .nv{color:teal}
-.codehilite .ow{font-weight:bold}
-.codehilite .w{color:#bbbbbb}
-.codehilite .mf{color:#009999}
-.codehilite .mh{color:#009999}
-.codehilite .mi{color:#009999}
-.codehilite .mo{color:#009999}
-.codehilite .sb{color:#dd1144}
-.codehilite .sc{color:#dd1144}
-.codehilite .sd{color:#dd1144}
-.codehilite .s2{color:#dd1144}
-.codehilite .se{color:#dd1144}
-.codehilite .sh{color:#dd1144}
-.codehilite .si{color:#dd1144}
-.codehilite .sx{color:#dd1144}
-.codehilite .sr{color:#009926}
-.codehilite .s1{color:#dd1144}
-.codehilite .ss{color:#990073}
-.codehilite .bp{color:#999999}
-.codehilite .vc{color:teal}
-.codehilite .vg{color:teal}
-.codehilite .vi{color:teal}
-.codehilite .il{color:#009999}
-.codehilite .gc{color:#999;background-color:#EAF2F5}
 
+.codehilite {
+    background-color: #fff;
+    color: #333333;
+}
 
-.MathJax_Hover_Frame {border-radius: .25em; -webkit-border-radius: .25em; -moz-border-radius: .25em; -khtml-border-radius: .25em; box-shadow: 0px 0px 15px #83A; -webkit-box-shadow: 0px 0px 15px #83A; -moz-box-shadow: 0px 0px 15px #83A; -khtml-box-shadow: 0px 0px 15px #83A; border: 1px solid #A6D ! important; display: inline-block; position: absolute}
-.MathJax_Menu_Button .MathJax_Hover_Arrow {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 4px; -webkit-border-radius: 4px; -moz-border-radius: 4px; -khtml-border-radius: 4px; font-family: 'Courier New',Courier; font-size: 9px; color: #F0F0F0}
-.MathJax_Menu_Button .MathJax_Hover_Arrow span {display: block; background-color: #AAA; border: 1px solid; border-radius: 3px; line-height: 0; padding: 4px}
-.MathJax_Hover_Arrow:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_Hover_Arrow:hover span {background-color: #CCC!important}
+.codehilite .hll {
+    background-color: #ffffcc;
+}
 
-#MathJax_About {position: fixed; left: 50%; width: auto; text-align: center; border: 3px outset; padding: 1em 2em; background-color: #DDDDDD; color: black; cursor: default; font-family: message-box; font-size: 120%; font-style: normal; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; border-radius: 15px; -webkit-border-radius: 15px; -moz-border-radius: 15px; -khtml-border-radius: 15px; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_About.MathJax_MousePost {outline: none}
-.MathJax_Menu {position: absolute; background-color: white; color: black; width: auto; padding: 2px; border: 1px solid #CCCCCC; margin: 0; cursor: default; font: menu; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; z-index: 201; box-shadow: 0px 10px 20px #808080; -webkit-box-shadow: 0px 10px 20px #808080; -moz-box-shadow: 0px 10px 20px #808080; -khtml-box-shadow: 0px 10px 20px #808080; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-.MathJax_MenuItem {padding: 2px 2em; background: transparent}
-.MathJax_MenuArrow {position: absolute; right: .5em; padding-top: .25em; color: #666666; font-size: .75em}
-.MathJax_MenuActive .MathJax_MenuArrow {color: white}
-.MathJax_MenuArrow.RTL {left: .5em; right: auto}
-.MathJax_MenuCheck {position: absolute; left: .7em}
-.MathJax_MenuCheck.RTL {right: .7em; left: auto}
-.MathJax_MenuRadioCheck {position: absolute; left: 1em}
-.MathJax_MenuRadioCheck.RTL {right: 1em; left: auto}
-.MathJax_MenuLabel {padding: 2px 2em 4px 1.33em; font-style: italic}
-.MathJax_MenuRule {border-top: 1px solid #CCCCCC; margin: 4px 1px 0px}
-.MathJax_MenuDisabled {color: GrayText}
-.MathJax_MenuActive {background-color: Highlight; color: HighlightText}
-.MathJax_MenuDisabled:focus, .MathJax_MenuLabel:focus {background-color: #E8E8E8}
-.MathJax_ContextMenu:focus {outline: none}
-.MathJax_ContextMenu .MathJax_MenuItem:focus {outline: none}
-#MathJax_AboutClose {top: .2em; right: .2em}
-.MathJax_Menu .MathJax_MenuClose {top: -10px; left: -10px}
-.MathJax_MenuClose {position: absolute; cursor: pointer; display: inline-block; border: 2px solid #AAA; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; font-family: 'Courier New',Courier; font-size: 24px; color: #F0F0F0}
-.MathJax_MenuClose span {display: block; background-color: #AAA; border: 1.5px solid; border-radius: 18px; -webkit-border-radius: 18px; -moz-border-radius: 18px; -khtml-border-radius: 18px; line-height: 0; padding: 8px 0 6px}
-.MathJax_MenuClose:hover {color: white!important; border: 2px solid #CCC!important}
-.MathJax_MenuClose:hover span {background-color: #CCC!important}
-.MathJax_MenuClose:hover:focus {outline: none}
+.codehilite .c {
+    color: #999988;
+    font-style: italic
+}
 
-.MathJax_Preview .MJXf-math {color: inherit!important}
+.codehilite .err {
+    color: #a61717;
+    background-color: #e3d2d2
+}
 
-.MJX_Assistive_MathML {position: absolute!important; top: 0; left: 0; clip: rect(1px, 1px, 1px, 1px); padding: 1px 0 0 0!important; border: 0!important; height: 1px!important; width: 1px!important; overflow: hidden!important; display: block!important; -webkit-touch-callout: none; -webkit-user-select: none; -khtml-user-select: none; -moz-user-select: none; -ms-user-select: none; user-select: none}
-.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {width: 100%!important}
+.codehilite .k {
+    font-weight: bold
+}
 
-#MathJax_Zoom {position: absolute; background-color: #F0F0F0; overflow: auto; display: block; z-index: 301; padding: .5em; border: 1px solid black; margin: 0; font-weight: normal; font-style: normal; text-align: left; text-indent: 0; text-transform: none; line-height: normal; letter-spacing: normal; word-spacing: normal; word-wrap: normal; white-space: nowrap; float: none; -webkit-box-sizing: content-box; -moz-box-sizing: content-box; box-sizing: content-box; box-shadow: 5px 5px 15px #AAAAAA; -webkit-box-shadow: 5px 5px 15px #AAAAAA; -moz-box-shadow: 5px 5px 15px #AAAAAA; -khtml-box-shadow: 5px 5px 15px #AAAAAA; filter: progid:DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')}
-#MathJax_ZoomOverlay {position: absolute; left: 0; top: 0; z-index: 300; display: inline-block; width: 100%; height: 100%; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
-#MathJax_ZoomFrame {position: relative; display: inline-block; height: 0; width: 0}
-#MathJax_ZoomEventTrap {position: absolute; left: 0; top: 0; z-index: 302; display: inline-block; border: 0; padding: 0; margin: 0; background-color: white; opacity: 0; filter: alpha(opacity=0)}
+.codehilite .o {
+    font-weight: bold
+}
 
-.MathJax_Preview {color: #888}
-#MathJax_Message {position: fixed; left: 1em; bottom: 1.5em; background-color: #E6E6E6; border: 1px solid #959595; margin: 0px; padding: 2px 8px; z-index: 102; color: black; font-size: 80%; width: auto; white-space: nowrap}
-#MathJax_MSIE_Frame {position: absolute; top: 0; left: 0; width: 0px; z-index: 101; border: 0px; margin: 0px; padding: 0px}
-.MathJax_Error {color: #CC0000; font-style: italic}
+.codehilite .cm {
+    color: #999988;
+    font-style: italic
+}
 
-.MJXp-script {font-size: .8em}
-.MJXp-right {-webkit-transform-origin: right; -moz-transform-origin: right; -ms-transform-origin: right; -o-transform-origin: right; transform-origin: right}
-.MJXp-bold {font-weight: bold}
-.MJXp-italic {font-style: italic}
-.MJXp-scr {font-family: MathJax_Script,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-frak {font-family: MathJax_Fraktur,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-sf {font-family: MathJax_SansSerif,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-cal {font-family: MathJax_Caligraphic,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-mono {font-family: MathJax_Typewriter,'Times New Roman',Times,STIXGeneral,serif}
-.MJXp-largeop {font-size: 150%}
-.MJXp-largeop.MJXp-int {vertical-align: -.2em}
-.MJXp-math {display: inline-block; line-height: 1.2; text-indent: 0; font-family: 'Times New Roman',Times,STIXGeneral,serif; white-space: nowrap; border-collapse: collapse}
-.MJXp-display {display: block; text-align: center; margin: 1em 0}
-.MJXp-math span {display: inline-block}
-.MJXp-box {display: block!important; text-align: center}
-.MJXp-box:after {content: " "}
-.MJXp-rule {display: block!important; margin-top: .1em}
-.MJXp-char {display: block!important}
-.MJXp-mo {margin: 0 .15em}
-.MJXp-mfrac {margin: 0 .125em; vertical-align: .25em}
-.MJXp-denom {display: inline-table!important; width: 100%}
-.MJXp-denom > * {display: table-row!important}
-.MJXp-surd {vertical-align: top}
-.MJXp-surd > * {display: block!important}
-.MJXp-script-box > *  {display: table!important; height: 50%}
-.MJXp-script-box > * > * {display: table-cell!important; vertical-align: top}
-.MJXp-script-box > *:last-child > * {vertical-align: bottom}
-.MJXp-script-box > * > * > * {display: block!important}
-.MJXp-mphantom {visibility: hidden}
-.MJXp-munderover {display: inline-table!important}
-.MJXp-over {display: inline-block!important; text-align: center}
-.MJXp-over > * {display: block!important}
-.MJXp-munderover > * {display: table-row!important}
-.MJXp-mtable {vertical-align: .25em; margin: 0 .125em}
-.MJXp-mtable > * {display: inline-table!important; vertical-align: middle}
-.MJXp-mtr {display: table-row!important}
-.MJXp-mtd {display: table-cell!important; text-align: center; padding: .5em 0 0 .5em}
-.MJXp-mtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-mlabeledtr {display: table-row!important}
-.MJXp-mlabeledtr > .MJXp-mtd:first-child {padding-left: 0}
-.MJXp-mlabeledtr:first-child > .MJXp-mtd {padding-top: 0}
-.MJXp-merror {background-color: #FFFF88; color: #CC0000; border: 1px solid #CC0000; padding: 1px 3px; font-style: normal; font-size: 90%}
-.MJXp-scale0 {-webkit-transform: scaleX(.0); -moz-transform: scaleX(.0); -ms-transform: scaleX(.0); -o-transform: scaleX(.0); transform: scaleX(.0)}
-.MJXp-scale1 {-webkit-transform: scaleX(.1); -moz-transform: scaleX(.1); -ms-transform: scaleX(.1); -o-transform: scaleX(.1); transform: scaleX(.1)}
-.MJXp-scale2 {-webkit-transform: scaleX(.2); -moz-transform: scaleX(.2); -ms-transform: scaleX(.2); -o-transform: scaleX(.2); transform: scaleX(.2)}
-.MJXp-scale3 {-webkit-transform: scaleX(.3); -moz-transform: scaleX(.3); -ms-transform: scaleX(.3); -o-transform: scaleX(.3); transform: scaleX(.3)}
-.MJXp-scale4 {-webkit-transform: scaleX(.4); -moz-transform: scaleX(.4); -ms-transform: scaleX(.4); -o-transform: scaleX(.4); transform: scaleX(.4)}
-.MJXp-scale5 {-webkit-transform: scaleX(.5); -moz-transform: scaleX(.5); -ms-transform: scaleX(.5); -o-transform: scaleX(.5); transform: scaleX(.5)}
-.MJXp-scale6 {-webkit-transform: scaleX(.6); -moz-transform: scaleX(.6); -ms-transform: scaleX(.6); -o-transform: scaleX(.6); transform: scaleX(.6)}
-.MJXp-scale7 {-webkit-transform: scaleX(.7); -moz-transform: scaleX(.7); -ms-transform: scaleX(.7); -o-transform: scaleX(.7); transform: scaleX(.7)}
-.MJXp-scale8 {-webkit-transform: scaleX(.8); -moz-transform: scaleX(.8); -ms-transform: scaleX(.8); -o-transform: scaleX(.8); transform: scaleX(.8)}
-.MJXp-scale9 {-webkit-transform: scaleX(.9); -moz-transform: scaleX(.9); -ms-transform: scaleX(.9); -o-transform: scaleX(.9); transform: scaleX(.9)}
-.MathJax_PHTML .noError {vertical-align: ; font-size: 90%; text-align: left; color: black; padding: 1px 3px; border: 1px solid}
+.codehilite .cp {
+    color: #999999;
+    font-weight: bold
+}
+
+.codehilite .c1 {
+    color: #999988;
+    font-style: italic
+}
+
+.codehilite .cs {
+    color: #999999;
+    font-weight: bold;
+    font-style: italic
+}
+
+.codehilite .gd {
+    color: #000000;
+    background-color: #ffdddd
+}
+
+.codehilite .ge {
+    font-style: italic
+}
+
+.codehilite .gr {
+    color: #aa0000
+}
+
+.codehilite .gh {
+    color: #999999
+}
+
+.codehilite .gi {
+    color: #000000;
+    background-color: #ddffdd
+}
+
+.codehilite .go {
+    color: #888888
+}
+
+.codehilite .gp {
+    color: #555555
+}
+
+.codehilite .gs {
+    font-weight: bold
+}
+
+.codehilite .gu {
+    color: #800080;
+    font-weight: bold
+}
+
+.codehilite .gt {
+    color: #aa0000
+}
+
+.codehilite .kc {
+    font-weight: bold
+}
+
+.codehilite .kd {
+    font-weight: bold
+}
+
+.codehilite .kn {
+    font-weight: bold
+}
+
+.codehilite .kp {
+    font-weight: bold
+}
+
+.codehilite .kr {
+    font-weight: bold
+}
+
+.codehilite .kt {
+    color: #445588;
+    font-weight: bold
+}
+
+.codehilite .m {
+    color: #009999
+}
+
+.codehilite .s {
+    color: #dd1144
+}
+
+.codehilite .n {
+    color: #333333
+}
+
+.codehilite .na {
+    color: teal
+}
+
+.codehilite .nb {
+    color: #0086b3
+}
+
+.codehilite .nc {
+    color: #445588;
+    font-weight: bold
+}
+
+.codehilite .no {
+    color: teal
+}
+
+.codehilite .ni {
+    color: purple
+}
+
+.codehilite .ne {
+    color: #990000;
+    font-weight: bold
+}
+
+.codehilite .nf {
+    color: #990000;
+    font-weight: bold
+}
+
+.codehilite .nn {
+    color: #555555
+}
+
+.codehilite .nt {
+    color: navy
+}
+
+.codehilite .nv {
+    color: teal
+}
+
+.codehilite .ow {
+    font-weight: bold
+}
+
+.codehilite .w {
+    color: #bbbbbb
+}
+
+.codehilite .mf {
+    color: #009999
+}
+
+.codehilite .mh {
+    color: #009999
+}
+
+.codehilite .mi {
+    color: #009999
+}
+
+.codehilite .mo {
+    color: #009999
+}
+
+.codehilite .sb {
+    color: #dd1144
+}
+
+.codehilite .sc {
+    color: #dd1144
+}
+
+.codehilite .sd {
+    color: #dd1144
+}
+
+.codehilite .s2 {
+    color: #dd1144
+}
+
+.codehilite .se {
+    color: #dd1144
+}
+
+.codehilite .sh {
+    color: #dd1144
+}
+
+.codehilite .si {
+    color: #dd1144
+}
+
+.codehilite .sx {
+    color: #dd1144
+}
+
+.codehilite .sr {
+    color: #009926
+}
+
+.codehilite .s1 {
+    color: #dd1144
+}
+
+.codehilite .ss {
+    color: #990073
+}
+
+.codehilite .bp {
+    color: #999999
+}
+
+.codehilite .vc {
+    color: teal
+}
+
+.codehilite .vg {
+    color: teal
+}
+
+.codehilite .vi {
+    color: teal
+}
+
+.codehilite .il {
+    color: #009999
+}
+
+.codehilite .gc {
+    color: #999;
+    background-color: #EAF2F5
+}
+
+.MathJax_Hover_Frame {
+    border-radius: .25em;
+    -webkit-border-radius: .25em;
+    -moz-border-radius: .25em;
+    -khtml-border-radius: .25em;
+    box-shadow: 0px 0px 15px #83A;
+    -webkit-box-shadow: 0px 0px 15px #83A;
+    -moz-box-shadow: 0px 0px 15px #83A;
+    -khtml-box-shadow: 0px 0px 15px #83A;
+    border: 1px solid #A6D ! important;
+    display: inline-block;
+    position: absolute
+}
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow {
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #AAA;
+    border-radius: 4px;
+    -webkit-border-radius: 4px;
+    -moz-border-radius: 4px;
+    -khtml-border-radius: 4px;
+    font-family: 'Courier New', Courier;
+    font-size: 9px;
+    color: #F0F0F0
+}
+
+.MathJax_Menu_Button .MathJax_Hover_Arrow span {
+    display: block;
+    background-color: #AAA;
+    border: 1px solid;
+    border-radius: 3px;
+    line-height: 0;
+    padding: 4px
+}
+
+.MathJax_Hover_Arrow:hover {
+    color: white!important;
+    border: 2px solid #CCC!important
+}
+
+.MathJax_Hover_Arrow:hover span {
+    background-color: #CCC!important
+}
+
+#MathJax_About {
+    position: fixed;
+    left: 50%;
+    width: auto;
+    text-align: center;
+    border: 3px outset;
+    padding: 1em 2em;
+    background-color: #DDDDDD;
+    color: black;
+    cursor: default;
+    font-family: message-box;
+    font-size: 120%;
+    font-style: normal;
+    text-indent: 0;
+    text-transform: none;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    float: none;
+    z-index: 201;
+    border-radius: 15px;
+    -webkit-border-radius: 15px;
+    -moz-border-radius: 15px;
+    -khtml-border-radius: 15px;
+    box-shadow: 0px 10px 20px #808080;
+    -webkit-box-shadow: 0px 10px 20px #808080;
+    -moz-box-shadow: 0px 10px 20px #808080;
+    -khtml-box-shadow: 0px 10px 20px #808080;
+    filter: progid: DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+}
+
+#MathJax_About.MathJax_MousePost {
+    outline: none
+}
+
+.MathJax_Menu {
+    position: absolute;
+    background-color: white;
+    color: black;
+    width: auto;
+    padding: 2px;
+    border: 1px solid #CCCCCC;
+    margin: 0;
+    cursor: default;
+    font: menu;
+    text-align: left;
+    text-indent: 0;
+    text-transform: none;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    float: none;
+    z-index: 201;
+    box-shadow: 0px 10px 20px #808080;
+    -webkit-box-shadow: 0px 10px 20px #808080;
+    -moz-box-shadow: 0px 10px 20px #808080;
+    -khtml-box-shadow: 0px 10px 20px #808080;
+    filter: progid: DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+}
+
+.MathJax_MenuItem {
+    padding: 2px 2em;
+    background: transparent
+}
+
+.MathJax_MenuArrow {
+    position: absolute;
+    right: .5em;
+    padding-top: .25em;
+    color: #666666;
+    font-size: .75em
+}
+
+.MathJax_MenuActive .MathJax_MenuArrow {
+    color: white
+}
+
+.MathJax_MenuArrow.RTL {
+    left: .5em;
+    right: auto
+}
+
+.MathJax_MenuCheck {
+    position: absolute;
+    left: .7em
+}
+
+.MathJax_MenuCheck.RTL {
+    right: .7em;
+    left: auto
+}
+
+.MathJax_MenuRadioCheck {
+    position: absolute;
+    left: 1em
+}
+
+.MathJax_MenuRadioCheck.RTL {
+    right: 1em;
+    left: auto
+}
+
+.MathJax_MenuLabel {
+    padding: 2px 2em 4px 1.33em;
+    font-style: italic
+}
+
+.MathJax_MenuRule {
+    border-top: 1px solid #CCCCCC;
+    margin: 4px 1px 0px
+}
+
+.MathJax_MenuDisabled {
+    color: GrayText
+}
+
+.MathJax_MenuActive {
+    background-color: Highlight;
+    color: HighlightText
+}
+
+.MathJax_MenuDisabled:focus,
+.MathJax_MenuLabel:focus {
+    background-color: #E8E8E8
+}
+
+.MathJax_ContextMenu:focus {
+    outline: none
+}
+
+.MathJax_ContextMenu .MathJax_MenuItem:focus {
+    outline: none
+}
+
+#MathJax_AboutClose {
+    top: .2em;
+    right: .2em
+}
+
+.MathJax_Menu .MathJax_MenuClose {
+    top: -10px;
+    left: -10px
+}
+
+.MathJax_MenuClose {
+    position: absolute;
+    cursor: pointer;
+    display: inline-block;
+    border: 2px solid #AAA;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -khtml-border-radius: 18px;
+    font-family: 'Courier New', Courier;
+    font-size: 24px;
+    color: #F0F0F0
+}
+
+.MathJax_MenuClose span {
+    display: block;
+    background-color: #AAA;
+    border: 1.5px solid;
+    border-radius: 18px;
+    -webkit-border-radius: 18px;
+    -moz-border-radius: 18px;
+    -khtml-border-radius: 18px;
+    line-height: 0;
+    padding: 8px 0 6px
+}
+
+.MathJax_MenuClose:hover {
+    color: white!important;
+    border: 2px solid #CCC!important
+}
+
+.MathJax_MenuClose:hover span {
+    background-color: #CCC!important
+}
+
+.MathJax_MenuClose:hover:focus {
+    outline: none
+}
+
+.MathJax_Preview .MJXf-math {
+    color: inherit!important
+}
+
+.MJX_Assistive_MathML {
+    position: absolute!important;
+    top: 0;
+    left: 0;
+    clip: rect(1px, 1px, 1px, 1px);
+    padding: 1px 0 0 0!important;
+    border: 0!important;
+    height: 1px!important;
+    width: 1px!important;
+    overflow: hidden!important;
+    display: block!important;
+    -webkit-touch-callout: none;
+    -webkit-user-select: none;
+    -khtml-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none
+}
+
+.MJX_Assistive_MathML.MJX_Assistive_MathML_Block {
+    width: 100%!important
+}
+
+#MathJax_Zoom {
+    position: absolute;
+    background-color: #F0F0F0;
+    overflow: auto;
+    display: block;
+    z-index: 301;
+    padding: .5em;
+    border: 1px solid black;
+    margin: 0;
+    font-weight: normal;
+    font-style: normal;
+    text-align: left;
+    text-indent: 0;
+    text-transform: none;
+    line-height: normal;
+    letter-spacing: normal;
+    word-spacing: normal;
+    word-wrap: normal;
+    white-space: nowrap;
+    float: none;
+    -webkit-box-sizing: content-box;
+    -moz-box-sizing: content-box;
+    box-sizing: content-box;
+    box-shadow: 5px 5px 15px #AAAAAA;
+    -webkit-box-shadow: 5px 5px 15px #AAAAAA;
+    -moz-box-shadow: 5px 5px 15px #AAAAAA;
+    -khtml-box-shadow: 5px 5px 15px #AAAAAA;
+    filter: progid: DXImageTransform.Microsoft.dropshadow(OffX=2, OffY=2, Color='gray', Positive='true')
+}
+
+#MathJax_ZoomOverlay {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 300;
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+#MathJax_ZoomFrame {
+    position: relative;
+    display: inline-block;
+    height: 0;
+    width: 0
+}
+
+#MathJax_ZoomEventTrap {
+    position: absolute;
+    left: 0;
+    top: 0;
+    z-index: 302;
+    display: inline-block;
+    border: 0;
+    padding: 0;
+    margin: 0;
+    background-color: white;
+    opacity: 0;
+    filter: alpha(opacity=0)
+}
+
+.MathJax_Preview {
+    color: #888
+}
+
+#MathJax_Message {
+    position: fixed;
+    left: 1em;
+    bottom: 1.5em;
+    background-color: #E6E6E6;
+    border: 1px solid #959595;
+    margin: 0px;
+    padding: 2px 8px;
+    z-index: 102;
+    color: black;
+    font-size: 80%;
+    width: auto;
+    white-space: nowrap
+}
+
+#MathJax_MSIE_Frame {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 0px;
+    z-index: 101;
+    border: 0px;
+    margin: 0px;
+    padding: 0px
+}
+
+.MathJax_Error {
+    color: #CC0000;
+    font-style: italic
+}
+
+.MJXp-script {
+    font-size: .8em
+}
+
+.MJXp-right {
+    -webkit-transform-origin: right;
+    -moz-transform-origin: right;
+    -ms-transform-origin: right;
+    -o-transform-origin: right;
+    transform-origin: right
+}
+
+.MJXp-bold {
+    font-weight: bold
+}
+
+.MJXp-italic {
+    font-style: italic
+}
+
+.MJXp-scr {
+    font-family: MathJax_Script, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-frak {
+    font-family: MathJax_Fraktur, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-sf {
+    font-family: MathJax_SansSerif, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-cal {
+    font-family: MathJax_Caligraphic, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-mono {
+    font-family: MathJax_Typewriter, 'Times New Roman', Times, STIXGeneral, serif
+}
+
+.MJXp-largeop {
+    font-size: 150%
+}
+
+.MJXp-largeop.MJXp-int {
+    vertical-align: -.2em
+}
+
+.MJXp-math {
+    display: inline-block;
+    line-height: 1.2;
+    text-indent: 0;
+    font-family: 'Times New Roman', Times, STIXGeneral, serif;
+    white-space: nowrap;
+    border-collapse: collapse
+}
+
+.MJXp-display {
+    display: block;
+    text-align: center;
+    margin: 1em 0
+}
+
+.MJXp-math span {
+    display: inline-block
+}
+
+.MJXp-box {
+    display: block!important;
+    text-align: center
+}
+
+.MJXp-box:after {
+    content: " "
+}
+
+.MJXp-rule {
+    display: block!important;
+    margin-top: .1em
+}
+
+.MJXp-char {
+    display: block!important
+}
+
+.MJXp-mo {
+    margin: 0 .15em
+}
+
+.MJXp-mfrac {
+    margin: 0 .125em;
+    vertical-align: .25em
+}
+
+.MJXp-denom {
+    display: inline-table!important;
+    width: 100%
+}
+
+.MJXp-denom > * {
+    display: table-row!important
+}
+
+.MJXp-surd {
+    vertical-align: top
+}
+
+.MJXp-surd > * {
+    display: block!important
+}
+
+.MJXp-script-box > * {
+    display: table!important;
+    height: 50%
+}
+
+.MJXp-script-box > * > * {
+    display: table-cell!important;
+    vertical-align: top
+}
+
+.MJXp-script-box > *:last-child > * {
+    vertical-align: bottom
+}
+
+.MJXp-script-box > * > * > * {
+    display: block!important
+}
+
+.MJXp-mphantom {
+    visibility: hidden
+}
+
+.MJXp-munderover {
+    display: inline-table!important
+}
+
+.MJXp-over {
+    display: inline-block!important;
+    text-align: center
+}
+
+.MJXp-over > * {
+    display: block!important
+}
+
+.MJXp-munderover > * {
+    display: table-row!important
+}
+
+.MJXp-mtable {
+    vertical-align: .25em;
+    margin: 0 .125em
+}
+
+.MJXp-mtable > * {
+    display: inline-table!important;
+    vertical-align: middle
+}
+
+.MJXp-mtr {
+    display: table-row!important
+}
+
+.MJXp-mtd {
+    display: table-cell!important;
+    text-align: center;
+    padding: .5em 0 0 .5em
+}
+
+.MJXp-mtr > .MJXp-mtd:first-child {
+    padding-left: 0
+}
+
+.MJXp-mtr:first-child > .MJXp-mtd {
+    padding-top: 0
+}
+
+.MJXp-mlabeledtr {
+    display: table-row!important
+}
+
+.MJXp-mlabeledtr > .MJXp-mtd:first-child {
+    padding-left: 0
+}
+
+.MJXp-mlabeledtr:first-child > .MJXp-mtd {
+    padding-top: 0
+}
+
+.MJXp-merror {
+    background-color: #FFFF88;
+    color: #CC0000;
+    border: 1px solid #CC0000;
+    padding: 1px 3px;
+    font-style: normal;
+    font-size: 90%
+}
+
+.MJXp-scale0 {
+    -webkit-transform: scaleX(.0);
+    -moz-transform: scaleX(.0);
+    -ms-transform: scaleX(.0);
+    -o-transform: scaleX(.0);
+    transform: scaleX(.0)
+}
+
+.MJXp-scale1 {
+    -webkit-transform: scaleX(.1);
+    -moz-transform: scaleX(.1);
+    -ms-transform: scaleX(.1);
+    -o-transform: scaleX(.1);
+    transform: scaleX(.1)
+}
+
+.MJXp-scale2 {
+    -webkit-transform: scaleX(.2);
+    -moz-transform: scaleX(.2);
+    -ms-transform: scaleX(.2);
+    -o-transform: scaleX(.2);
+    transform: scaleX(.2)
+}
+
+.MJXp-scale3 {
+    -webkit-transform: scaleX(.3);
+    -moz-transform: scaleX(.3);
+    -ms-transform: scaleX(.3);
+    -o-transform: scaleX(.3);
+    transform: scaleX(.3)
+}
+
+.MJXp-scale4 {
+    -webkit-transform: scaleX(.4);
+    -moz-transform: scaleX(.4);
+    -ms-transform: scaleX(.4);
+    -o-transform: scaleX(.4);
+    transform: scaleX(.4)
+}
+
+.MJXp-scale5 {
+    -webkit-transform: scaleX(.5);
+    -moz-transform: scaleX(.5);
+    -ms-transform: scaleX(.5);
+    -o-transform: scaleX(.5);
+    transform: scaleX(.5)
+}
+
+.MJXp-scale6 {
+    -webkit-transform: scaleX(.6);
+    -moz-transform: scaleX(.6);
+    -ms-transform: scaleX(.6);
+    -o-transform: scaleX(.6);
+    transform: scaleX(.6)
+}
+
+.MJXp-scale7 {
+    -webkit-transform: scaleX(.7);
+    -moz-transform: scaleX(.7);
+    -ms-transform: scaleX(.7);
+    -o-transform: scaleX(.7);
+    transform: scaleX(.7)
+}
+
+.MJXp-scale8 {
+    -webkit-transform: scaleX(.8);
+    -moz-transform: scaleX(.8);
+    -ms-transform: scaleX(.8);
+    -o-transform: scaleX(.8);
+    transform: scaleX(.8)
+}
+
+.MJXp-scale9 {
+    -webkit-transform: scaleX(.9);
+    -moz-transform: scaleX(.9);
+    -ms-transform: scaleX(.9);
+    -o-transform: scaleX(.9);
+    transform: scaleX(.9)
+}
+
+.MathJax_PHTML .noError {
+    vertical-align: ;
+    font-size: 90%;
+    text-align: left;
+    color: black;
+    padding: 1px 3px;
+    border: 1px solid
+}
+
 </style>
