@@ -1,10 +1,11 @@
 <!DOCTYPE html>
 <html>
 <!--
-  1. 页面宽度在满屏时候调整为45%
-  2. 侧栏
-  3. 主题控制
-  4. 顶部导航不随页面滚动
+TODO
+  1. 页面宽度在满屏时候调整为45%...7
+  2. 侧栏...x
+  3. 主题控制...x
+  4. 顶部导航不随页面滚动...x
   -->
 
 <head>
@@ -24,6 +25,25 @@
     <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
     </script>
     <script src="jquery.pin.js"></script>
+    <style type="text/css">
+    @media (min-width: 768px) {
+        .container {
+            width: 570px;
+        }
+    }
+    
+    @media (min-width: 992px) {
+        .container {
+            width: 750px;
+        }
+    }
+    
+    @media (min-width: 1200px) {
+        .container {
+            width: 930px;
+        }
+    }
+    </style>
 </head>
 
 <body>
@@ -78,21 +98,21 @@
             <code>Coding Life</code>
             <blockquote>
                 <p>
-                    <a href="https://www.freecodecamp.com">FCC</a> |
-                    <a href="http://w3schools.bootcss.com">w3</a> |
                     <a href="http://getbootstrap.com/">Bootstrap</a> |
                     <a href="http://codeguide.co/">CodeGuide</a> |
+                    <a href="https://www.freecodecamp.com">FCC</a> |
                     <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a> |
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">ColorPicker</a> |
-                    <a href="https://fonts.google.com/">GFonts</a> |
+                    <a href="http://w3schools.bootcss.com">w3</a> |
                     <a href="http://caniuse.com/#home">caniuse</a> |
                     <a href="https://validator.w3.org/">W3Check</a> |
-                    <a href="http://codepen.io">CodePen</a> |
+                    <a href="http://codepen.io">CodePen</a>
                 </p>
                 <p>
                     <a href="https://www.segmentfault.com">SF</a> |
                     <a href="http://www.worldhello.net/gotgit/index.html">JX_Git</a> |
                     <a href="https://guides.github.com/" target="_blank">GitHub</a>
+                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">ColorPicker</a> |
+                    <a href="https://fonts.google.com/">GFonts</a> |
                 </p>
             </blockquote>
         </p>
@@ -251,4 +271,3 @@
 </body>
 
 </html>
-
