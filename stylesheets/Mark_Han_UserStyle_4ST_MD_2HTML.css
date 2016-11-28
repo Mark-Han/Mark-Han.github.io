@@ -14,8 +14,7 @@ body
 }
 
 body {
-    width: 50%;
-    /*此处原先为980px 26 Apr., 2016*/
+    width: 980px;
     margin-right: auto;
     margin-left: auto;
     background-color: #f0f0f0;
