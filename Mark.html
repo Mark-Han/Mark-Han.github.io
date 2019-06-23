@@ -1,243 +1,257 @@
 <!DOCTYPE html>
 <html>
 <!--TODO
-  - [x] 1. 更改默认页面大小
-  - [ ] 2. 添加侧栏
-  - [ ] 3. 主题切换
-  - [ ] 4. 顶部导航不随页面滚动
-  -->
+- [x] 1. 更改默认页面大小
+- [ ] 2. 添加侧栏
+- [ ] 3. 主题切换
+- [ ] 4. 顶部导航不随页面滚动
+-->
 
 <head>
-    <title>Mark Han's World...</title>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="icon" type="image/png" href="favicon.png">
-    <!-- Latest compiled and minified CSS -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-    <!-- Optional theme -->
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
-    <!-- Latest compiled and minified JavaScript -->
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
-    </script>
-    <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
-    <script src="https://use.fontawesome.com/6791a7d771.js"></script>
-    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
-    </script>
-    <script src="jquery.pin.js"></script>
-    <style type="text/css">
-    @media (min-width: 768px) {
-        .container {
-            width: 570px;
-        }
+  <title>Mark Han's World...</title>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/png" href="favicon.png">
+  <!-- Latest compiled and minified CSS -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+  <!-- Optional theme -->
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap-theme.min.css" integrity="sha384-rHyoN1iRsVXV4nD0JutlnGaslCJuC7uwjduW9SVrLvRYooPp2bWYgmgJQIXwl/Sp" crossorigin="anonymous">
+  <!-- Latest compiled and minified JavaScript -->
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous">
+  </script>
+  <!-- <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css"> -->
+  <script src="https://use.fontawesome.com/6791a7d771.js"></script>
+  <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js">
+  </script>
+  <script src="jquery.pin.js"></script>
+  <style type="text/css">
+  @media (min-width: 768px) {
+    .container {
+      width: 570px;
     }
-    
-    @media (min-width: 992px) {
-        .container {
-            width: 750px;
-        }
+  }
+
+  @media (min-width: 992px) {
+    .container {
+      width: 750px;
     }
-    
-    @media (min-width: 1200px) {
-        .container {
-            width: 900px;
-        }
+  }
+
+  @media (min-width: 1200px) {
+    .container {
+      width: 900px;
     }
-    </style>
+  }
+  </style>
 </head>
 
 <body>
-    <div class="container">
-
-        <ul class="nav nav-tabs pinned" style="border-bottom: none;">
-            <!--  style="border-bottom: none;" 添加此属性去除导航下边线条>
-        -->
-            <li class="active"><a href="#Code">Code</a></li>
-            <li><a href="#Linux">Linux</a></li>
-            <li><a href="#Forum">Forum</a></li>
-            <li><a href="#Literature">Literature</a></li>
-            <li><a href="#Typing">Typing</a></li>
-            <li><a href="#Dicts">Dicts</a></li>
-            <li><a href="#Designing">Designing</a></li>
-            <li><a href="#Mat">Mat</a></li>
-        </ul>
-        <h1>
+  <div class="container">
+    <ul class="nav nav-tabs pinned" style="border-bottom: none;">
+      <!--  style="border-bottom: none;" 添加此属性去除导航下边线条>
+-->
+      <li class="active"><a href="#Code">Code</a></li>
+      <li><a href="#Linux">Linux</a></li>
+      <li><a href="#Forum">Forum</a></li>
+      <li><a href="#Icon">Icon</a></li>
+      <li><a href="#Literature">Literature</a></li>
+      <li><a href="#Typing">Typing</a></li>
+      <li><a href="#Dicts">Dicts</a></li>
+      <li><a href="#Designing">Designing</a></li>
+      <li><a href="#Mat">Mat</a></li>
+    </ul>
+    <h1>
       <a href="http://www.lavaradio.com/#module=radio&amp;action=program&amp;program_id=6902" target="_blank"><i class="fa fa-spinner fa-pulse fa-1x fa-fw margin-bottom"></i>
-      Mark Han's World...</a>
-      </h1>
-        <hr>
+        Mark Han's World...</a>
+    </h1>
+    <hr>
+    <p>
+      <i id="Code" class="fa fa-2x fa-code" aria-hidden="true"> </i>
+      <code>Coding Life on Web</code>
+      <blockquote>
         <p>
-            <i id="Code" class="fa fa-2x fa-code" aria-hidden="true"> </i>
-            <code>Coding Life on Web</code>
-            <blockquote>
-                <p>
-                    <a href="http://getbootstrap.com/">Bootstrap</a> |
-                    <a href="http://codeguide.co/">CodeGuide</a> |
-                    <a href="https://www.freecodecamp.com">FCC</a> |
-                    <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a> |
-                    <a href="http://w3schools.bootcss.com">w3</a> |
-                    <a href="http://caniuse.com/#home">caniuse</a> |
-                    <a href="https://validator.w3.org/">W3Check</a> |
-                    <a href="http://codepen.io">CodePen</a>
-                </p>
-                <p>
-                    <a href="http://caniuse.com/#home">canIuse</a> |
-                    <a href="http://colorbrewer2.org/">ColorBrever</a> |
-                    <a href="https://fonts.google.com/">GFonts</a> |
-                    <a href="https://www.segmentfault.com">SF</a> |
-                    <a href="http://www.worldhello.net/gotgit/index.html">JX_Git</a> |
-                    <a href="https://guides.github.com/" target="_blank">GitHub</a> |
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">ColorPicker</a>
-                </p>
-            </blockquote>
+          <a href="http://getbootstrap.com/">Bootstrap</a> |
+          <a href="http://codeguide.co/">CodeGuide</a> |
+          <a href="https://www.freecodecamp.com">FCC</a> |
+          <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a> |
+          <a href="http://w3schools.bootcss.com">w3</a> |
+          <a href="http://caniuse.com/#home">caniuse</a> |
+          <a href="https://validator.w3.org/">W3Check</a> |
+          <a href="http://codepen.io">CodePen</a>
         </p>
-        <hr>
         <p>
-            <i id="Linux" class="fa  fa-2x fa-linux" aria-hidden="true"> </i>
-            <code>Linux</code>
+          <a href="http://caniuse.com/#home">canIuse</a> |
+          <a href="http://colorbrewer2.org/">ColorBrever</a> |
+          <a href="https://fonts.google.com/">GFonts</a> |
+          <a href="https://www.segmentfault.com">SF</a> |
+          <a href="http://www.worldhello.net/gotgit/index.html">JX_Git</a> |
+          <a href="https://guides.github.com/" target="_blank">GitHub</a> |
+          <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">ColorPicker</a>
         </p>
-        <blockquote>
-            <p>
-                <a href="http://www.rpmfind.net/">RPM</a> |
-                <a href="http://tipsonubuntu.com/">tps</a> |
-                <a href="https://www.maketecheasier.com/category/linux-tips/">how2</a> |
-                <a href="http://packages.ubuntu.com/xenial/">xenial</a> |
-                <a href="http:///wiki.ubuntu.org.cn/UbuntuManual">Man_CN</a> |
-                <a href="https://wiki.debian.org/zh_CN/Aplitude">Aptitude</a>
-            </p>
-        </blockquote>
-        <hr>
-        <P>
-            <i id="Forum" class="fa  fa-2x fa-github" aria-hidden="true"> </i>
-            <code>Forum</code>
-        </P>
-        <blockquote>
-            <p>
-                <a href="http://fcode.cn" target="_blank">Fcode</a> |
-                <a href="https://readthedocs.org/">DOC</a> |
-                <a href="http://cn.mathworks.com/support/?s_tid=gn_supp" target="_blank">MatLab</a> |
-                <a href="http://originlab.com/doc/User-Guide" target="_blank">OroginLab</a> |
-                <a href="http://www.bigear.cn" target="_blank">eBigEar</a> |
-                <a href="http://edu.yanfabu.com/course/473" target="_blank">HM</a>
-            </p>
-            <p>
-                <a href="http://www.dlut.edu.cn/" target="_blank">DUT</a> |
-                <a href="http://cn.comsol.com/" target="_blank">COMSOL</a> |
-                <a href="http://www.meishij.net/" target="_blank">MSJ</a>
-            </p>
-        </blockquote>
-        <hr>
-        <p>
-            <i id="Literature" class="fa fa-2x fa-google-plus-square" aria-hidden="true"></i> <code>Literature</code></p>
-        <blockquote>
-            <p>
-                <a href="http://sciencemag.org" target="_blank">Science</a> |
-                <a href="http://nature.com" target="_blank">Nature</a> |
-                <a href="http://journals.aps.org/" target="_blank">APS</a> |
-                <a href="http://metamaterials.duke.edu/">DukeMeta</a> |
-                <a href="https://figshare.com/" target="_blank">figshare</a> |
-                <a href="http://cn.bing.com/academic" target="_blank">MAcdm</a> |
-                <a href="http://www.sci-hub.cn/" target="_blank">SciHuB</a>
-            </p>
-            <p>
-                <a href="webofknowledge.com">wos</a> |
-                <a href="https://aminer.org/">Aminer</a> |
-                <a href="https://www.google.com.hk/">GoogleHK</a> |
-                <a href="http://so.sciencesoft.cn/">Mirror1</a> |
-                <a href="http://xs.chongbuluo.com/">Mirror2</a> |
-                <a href="http://dir.scmor.com/google/">Mirror3</a> |
-                <a href="http://scholar.glgoo.org/">Mirror4</a> |
-                <a href="https://www.howsci.com/google-ip.html">Gip</a>
-            </p>
-            <p>
-                <a href="http://xlab.me.berkeley.edu/publications.html" target="_blank">XZhang</a> |
-                <a href="http://people.ee.duke.edu/~cummer/pubs.html" target="_blank">Cummer</a>｜
-                <a href="http://metamaterials.duke.edu/" target="_blank">Duke</a>｜
-                <a href="http://web.missouri.edu/~huangg/" target="_blank">GLHuang</a> |
-                <a href="http://engineering.missouri.edu/person/chenz/">Zhen</a> |
-                <a href="https://wcm.kaust.edu.sa/Pages/Publication.aspx" target="_blank">YWu</a>
-            </p>
-            <p>
-                <a href="http://www.letpub.com.cn/index.php?page=sci_writing" target="_blank">LetPub</a> |
-                <a href="https://www.elsevier.com/connect/11-steps-to-structuring-a-science-paper-editors-will-take-seriously#step11" target="_blank">PaperWrite</a> |
-                <a href="http://www.mdpi.com/journal/photonics" target="_blank">Photonics</a> |
-                <a href="http://v.163.com/special/opencourse/equations.html" target="_blank">ODE@MIT</a>
-            </p>
-        </blockquote>
-        <hr>
-        <p>
-            <i id="Typing" class="fa fa-2x fa-viadeo-square" aria-hidden="true"></i> <code>Typing</code></p>
-        <blockquote>
-            <p>
-                <a href="http://ctan.org/" target="_blank">CTAN</a> |
-                <a href="https://latex-project.org/">Project </a> |
-                <a href="https://en.wikibooks.org/wiki/LaTeX">WikiTeX</a> |
-                <a href="http://www.andy-roberts.net/writing/latex">Tutorial </a> |
-                <a href="http://latex.codecogs.com/eqneditor/editor.php" target="_blank">TeXOnline</a> |
-                <a href="https://www.sharelatex.com" target="_blank">ShareLaTeX</a>
-            </p>
-            <p>
-                <a href="https://packagecontrol.io/" target="_blank">PkgCtrl</a> |
-                <a href="http://daringfireball.net/projects/markdown/" target="_blank">Dingus</a> |
-                <a href="http://www.cnprint.org/bbs/index.php">CPC</a>
-            </p>
-        </blockquote>
-        <hr>
-        <p><i id="Dicts" class="fa fa-2x fa-tags" aria-hidden="true"></i> <code>Dicts</code></p>
-        <blockquote>
-            <p>
-                <a href="http://www.merriam-webster.com/" target="_blank">Webster</a> |
-                <a href="http://dictionary.cambridge.org/us/" target="_blank">Cambridge</a> |
-                <a href="http://www.macmillandictionary.com/" target="_blank">Macmillian</a> |
-                <a href="http://www.collinsdictionary.com/" target="_blank">Collins</a> |
-                <a href="http://www.oxforddictionaries.com/" target="_blank">Oxford</a> |
-                <a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page" title="">wikidic</a> |
-                <a href="http://wordnet-online.freedicts.com/">Wordnet</a>
-                <p></p>
-                <a href="http://www.thesaurus.com/" target="_blank">synonyms</a> |
-                <a href="http://www.ozdic.com/" target="_blank">ozdic</a> |
-                <a href="https://prowritingaid.com/Free-Online-Collocations-Dictionary.aspx" target="_blank"> prowritingaid</a> |
-                <a href="http://www.vocabulary.com/dictionary/" target="_blank">Vocabulary</a> |
-                <a href="http://www.yourdictionary.com/" target="_blank">Ur Dict</a> |
-                <a href="http://www.thefreedictionary.com/" target="_blank">Free</a> |
-                <a href="http://dictionary.reference.com/" target="_blank">Dict</a>
-            </p>
-        </blockquote>
-        <hr>
-        <p>
-            <i id="Designing" class="fa fa-2x fa-apple" aria-hidden="true"></i>
-            <a href="https://i.mi.com/" target="_blank"> <code>Designing</code></a>
-        </p>
-        <blockquote>
-            <p>
-                <a href="http://www.uisdc.com/" target="_blank">UISDC</a> |
-                <a href="https://isux.tencent.com/" target="_blank">ISUX</a> |
-                <a href="https://designschool.canva.com/" target="_blank">CANVA</a> |
-                <a href="http://www.ico.la/" target="_blank">2icon</a> |
-                <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> |
-                <a href="http://www.yanj.cn/" target="_blank">YanJ</a> |
-                <a href="http://www.w3school.com.cn/index.html" target="_blank">W3</a> |
-                <a href="http://www.w3cschool.cn/" target="_blank">W3C</a> |
-                <a href="http://www.rabbitpre.com/store" target="_blank">PSD2H5</a>
-            </p>
-            <p>
-                <a href="http://www.fancybox.net/" target="_blank">FancyBox</a> |
-                <a href="http://www.materialpalette.com/" target="_blank">MatPal</a> |
-                <a href="http://www.color-hex.com/" target="_blank">ColorHEX</a> |
-                <a href="http://smallpdf.com/" target="_blank">SmallPDF</a> |
-                <a href="http://www.cssportal.com/" target="_blank">CSSPortal</a> |
-                <a href="http://www.thesitewizard.com/css/index.shtml" target="_blank">SiteWizard</a>
-            </p>
-        </blockquote>
-        <hr>
-        <p>
-            <i id="Mat" class="fa fa-2x fa-cogs" aria-hidden="true"></i> <code>Mats</code></p>
-        <blockquote>
-            <p>
-                <a href="http://matweb.com" target="_blank">MatWeb</a>
-            </p>
-        </blockquote>
-    </div>
+      </blockquote>
+    </p>
+    <hr>
+    <p>
+      <i id="Linux" class="fa  fa-2x fa-linux" aria-hidden="true"> </i>
+      <code>Linux</code>
+    </p>
+    <blockquote>
+      <p>
+        <a href="http://www.rpmfind.net/">RPM</a> |
+        <a href="http://tipsonubuntu.com/">tps</a> |
+        <a href="https://www.maketecheasier.com/category/linux-tips/">how2</a> |
+        <a href="http://packages.ubuntu.com/xenial/">xenial</a> |
+        <a href="http:///wiki.ubuntu.org.cn/UbuntuManual">Man_CN</a> |
+        <a href="https://wiki.debian.org/zh_CN/Aplitude">Aptitude</a>
+      </p>
+    </blockquote>
+    <hr>
+    <P>
+      <i id="Forum" class="fa  fa-2x fa-github" aria-hidden="true"> </i>
+      <code>Forum</code>
+    </P>
+    <blockquote>
+      <p>
+        <a href="http://fcode.cn" target="_blank">Fcode</a> |
+        <a href="https://readthedocs.org/">DOC</a> |
+        <a href="http://cn.mathworks.com/support/?s_tid=gn_supp" target="_blank">MatLab</a> |
+        <a href="http://originlab.com/doc/User-Guide" target="_blank">OroginLab</a> |
+        <a href="http://www.bigear.cn" target="_blank">eBigEar</a> |
+        <a href="http://edu.yanfabu.com/course/473" target="_blank">HM</a>
+      </p>
+      <p>
+        <a href="http://www.dlut.edu.cn/" target="_blank">DUT</a> |
+        <a href="http://cn.comsol.com/" target="_blank">COMSOL</a> |
+        <a href="http://www.meishij.net/" target="_blank">MSJ</a>
+      </p>
+    </blockquote>
+    <hr>
+    <p>
+      <i id="Literature" class="fa fa-2x fa-google-plus-square" aria-hidden="true"></i> <code>Literature</code></p>
+    <blockquote>
+      <p>
+        <a href="http://sciencemag.org" target="_blank">Science</a> |
+        <a href="http://nature.com" target="_blank">Nature</a> |
+        <a href="http://journals.aps.org/" target="_blank">APS</a> |
+        <a href="http://metamaterials.duke.edu/">DukeMeta</a> |
+        <a href="https://figshare.com/" target="_blank">figshare</a> |
+        <a href="http://cn.bing.com/academic" target="_blank">MAcdm</a> |
+        <a href="http://www.sci-hub.cn/" target="_blank">SciHuB</a>
+      </p>
+      <p>
+        <a href="webofknowledge.com">wos</a> |
+        <a href="https://aminer.org/">Aminer</a> |
+        <a href="https://www.google.com.hk/">GoogleHK</a> |
+        <a href="http://so.sciencesoft.cn/">Mirror1</a> |
+        <a href="http://xs.chongbuluo.com/">Mirror2</a> |
+        <a href="http://dir.scmor.com/google/">Mirror3</a> |
+        <a href="http://scholar.glgoo.org/">Mirror4</a> |
+        <a href="https://www.howsci.com/google-ip.html">Gip</a>
+      </p>
+      <p>
+        <a href="http://xlab.me.berkeley.edu/publications.html" target="_blank">XZhang</a> |
+        <a href="http://people.ee.duke.edu/~cummer/pubs.html" target="_blank">Cummer</a>｜
+        <a href="http://metamaterials.duke.edu/" target="_blank">Duke</a>｜
+        <a href="http://web.missouri.edu/~huangg/" target="_blank">GLHuang</a> |
+        <a href="http://engineering.missouri.edu/person/chenz/">Zhen</a> |
+        <a href="https://wcm.kaust.edu.sa/Pages/Publication.aspx" target="_blank">YWu</a>
+      </p>
+      <p>
+        <a href="http://www.letpub.com.cn/index.php?page=sci_writing" target="_blank">LetPub</a> |
+        <a href="https://www.elsevier.com/connect/11-steps-to-structuring-a-science-paper-editors-will-take-seriously#step11" target="_blank">PaperWrite</a> |
+        <a href="http://www.mdpi.com/journal/photonics" target="_blank">Photonics</a> |
+        <a href="http://v.163.com/special/opencourse/equations.html" target="_blank">ODE@MIT</a>
+      </p>
+    </blockquote>
+    <hr>
+    <p>
+      <i id="Typing" class="fa fa-2x fa-viadeo-square" aria-hidden="true"></i> <code>Typing</code></p>
+    <blockquote>
+      <p>
+        <a href="http://ctan.org/" target="_blank">CTAN</a> |
+        <a href="https://latex-project.org/">Project </a> |
+        <a href="https://en.wikibooks.org/wiki/LaTeX">WikiTeX</a> |
+        <a href="http://www.andy-roberts.net/writing/latex">Tutorial </a> |
+        <a href="http://latex.codecogs.com/eqneditor/editor.php" target="_blank">TeXOnline</a> |
+        <a href="https://www.sharelatex.com" target="_blank">ShareLaTeX</a>
+      </p>
+      <p>
+        <a href="https://packagecontrol.io/" target="_blank">PkgCtrl</a> |
+        <a href="http://daringfireball.net/projects/markdown/" target="_blank">Dingus</a> |
+        <a href="http://www.cnprint.org/bbs/index.php">CPC</a>
+      </p>
+    </blockquote>
+    <hr>
+    <p><i id="Dicts" class="fa fa-2x fa-tags" aria-hidden="true"></i> <code>Dicts</code></p>
+    <blockquote>
+      <p>
+        <a href="http://www.merriam-webster.com/" target="_blank">Webster</a> |
+        <a href="http://dictionary.cambridge.org/us/" target="_blank">Cambridge</a> |
+        <a href="http://www.macmillandictionary.com/" target="_blank">Macmillian</a> |
+        <a href="http://www.collinsdictionary.com/" target="_blank">Collins</a> |
+        <a href="http://www.oxforddictionaries.com/" target="_blank">Oxford</a> |
+        <a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page" title="">wikidic</a> |
+        <a href="http://wordnet-online.freedicts.com/">Wordnet</a>
+        <p></p>
+        <a href="http://www.thesaurus.com/" target="_blank">synonyms</a> |
+        <a href="http://www.ozdic.com/" target="_blank">ozdic</a> |
+        <a href="https://prowritingaid.com/Free-Online-Collocations-Dictionary.aspx" target="_blank"> prowritingaid</a> |
+        <a href="http://www.vocabulary.com/dictionary/" target="_blank">Vocabulary</a> |
+        <a href="http://www.yourdictionary.com/" target="_blank">Ur Dict</a> |
+        <a href="http://www.thefreedictionary.com/" target="_blank">Free</a> |
+        <a href="http://dictionary.reference.com/" target="_blank">Dict</a>
+      </p>
+    </blockquote>
+    <hr>
+    <p>
+      <i id="Icon" class="fa fa-2x fa-500px" aria-hidden="true"></i><code>Icon</code>
+    </p>
+    <blockquote>
+      <p>
+        <a href="https://www.easyicon.net/">EasyIcon</a>
+        <a href="https://www.iconfont.cn/">Alicon</a>
+        <a href="https://www.flaticon.com/">flaticon</a>
+        <a href="http://pictogram2.com/">green</a>
+        <a href="https://www.iconfinder.com/">finder</a>
+        <a href="https://silhouette-ac.com/cn/">AC</a>
+      </p>
+    </blockquote>
+    <hr>
+    <p>
+      <i id="Designing" class="fa fa-2x fa-apple" aria-hidden="true"></i>
+      <a href="https://i.mi.com/" target="_blank"> <code>Designing</code></a>
+    </p>
+    <blockquote>
+      <p>
+        <a href="http://www.uisdc.com/" target="_blank">UISDC</a> |
+        <a href="https://isux.tencent.com/" target="_blank">ISUX</a> |
+        <a href="https://designschool.canva.com/" target="_blank">CANVA</a> |
+        <a href="http://www.ico.la/" target="_blank">2icon</a> |
+        <a href="https://fortawesome.github.io/Font-Awesome/" target="_blank">FontAwesome</a> |
+        <a href="http://www.yanj.cn/" target="_blank">YanJ</a> |
+        <a href="http://www.w3school.com.cn/index.html" target="_blank">W3</a> |
+        <a href="http://www.w3cschool.cn/" target="_blank">W3C</a> |
+        <a href="http://www.rabbitpre.com/store" target="_blank">PSD2H5</a>
+      </p>
+      <p>
+        <a href="http://www.fancybox.net/" target="_blank">FancyBox</a> |
+        <a href="http://www.materialpalette.com/" target="_blank">MatPal</a> |
+        <a href="http://www.color-hex.com/" target="_blank">ColorHEX</a> |
+        <a href="http://smallpdf.com/" target="_blank">SmallPDF</a> |
+        <a href="http://www.cssportal.com/" target="_blank">CSSPortal</a> |
+        <a href="http://www.thesitewizard.com/css/index.shtml" target="_blank">SiteWizard</a>
+      </p>
+    </blockquote>
+    <hr>
+    <p>
+      <i id="Mat" class="fa fa-2x fa-cogs" aria-hidden="true"></i> <code>Mats</code></p>
+    <blockquote>
+      <p>
+        <a href="http://matweb.com" target="_blank">MatWeb</a>
+      </p>
+    </blockquote>
+  </div>
 </body>
 
 </html>
