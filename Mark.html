@@ -1,63 +1,110 @@
 <!DOCTYPE html>
 <html>
-<title>Mark Han's World...</title>
-<meta charset="utf-8">
-<link rel="icon" type="image/png" href="favicon.png">
-<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-<script src="https://use.fontawesome.com/6791a7d771.js"></script>
-<script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
-<script src="jquery.pin.js"></script>
-<style type="text/css">
-<style>body {
-    background-color: ;
-}
 
-/* adds some margin and padding to the container */
-.container {
-    margin-top: 3rem;
-    padding: 9rem;
-    border-radius: 5rem;
-    box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
-    background-color: white;
-}
+<head>
+    <meta charset="UTF-8">
+    <title>Mark Han's World...</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
+    <script src="https://kit.fontawesome.com/94ad78f6d0.js" crossorigin="anonymous"></script>
+    <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
+    <script src="jquery.pin.js"></script>
+    <style type="text/css">
+        body {
+            background-color: ;
+        }
 
-/* adds some hover effect to the links */
-.list-group-item:hover {
-    background-color: #e9ecef;
-    text-decoration: underline;
-}
-</style>
-</style>
+        /* adds some margin and padding to the container */
+        .container {
+            margin-top: 3rem;
+            padding: 9rem;
+            padding-top: 6rem;
+            /* border-radius: 5rem; */
+            border-top-left-radius: 5rem;
+            border-top-right-radius: 5rem;
+            box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
+            background-color: white;
+        }
+
+        /* Remove underline from link */
+        a {
+            text-decoration: none;
+            color: #337AB7;
+        }
+
+        a:hover {
+            text-decoration: underline;
+        }
+
+        ul {
+            list-style-type: none;
+        }
+
+        hr {
+            margin: 1rem 0;
+            color: inherit;
+            background-color: currentColor;
+            border: 0;
+            opacity: 0.10;
+        }
+
+        h1 {
+            margin-top: 4rem;
+        }
+
+        i {
+            color: lightpink;
+        }
+    </style>
+
 </head>
 
 <body>
+   
     <div class="container">
-        <ul class="nav nav-tabs pinned" style="border-bottom: none;">
-            <li class="active"><a href="#Code">Code</a></li>
-            <li><a href="#Linux">Linux</a></li>
-            <li><a href="#Forum">Forum</a></li>
-            <li><a href="#Icon">Icon</a></li>
-            <li><a href="#Nav">Nav</a></li>
-            <li><a href="#Literature">Literature</a></li>
-            <li><a href="#Typing">Typing</a></li>
-            <li><a href="#Dicts">Dicts</a></li>
-            <li><a href="#Designing">Designing</a></li>
-            <li><a href="#Tools">Tools</a></li>
-            <li><a href="#Mat">Mat</a></li>
+        <ul class=" navbar navbar-brand" style="border-bottom: none;">
+            <li class="nav-item"><a href="#Code">Code</a></li>
+            <li class="nav-item"><a href="#Linux">Linux</a></li>
+            <li class="nav-item"><a href="#Forum">Forum</a></li>
+            <li class="nav-item"><a href="#Icon">Icon</a></li>
+            <li class="nav-item"><a href="#Nav">Nav</a></li>
+            <li class="active"><a href="#Literature">Literature</a></li>
+            <li class="nav-item"><a href="#Typing">Typing</a></li>
+            <li class="nav-item"><a href="#Dicts">Dicts</a></li>
+            <li class="nav-item"><a href="#Designing">Designing</a></li>
+            <li class="nav-item"><a href="#Tools">Tools</a></li>
+            <li class="nav-item"><a href="#Mat">Mat</a></li>
+            <li class="nav-item"><a href="#AI">AI</a></li>
         </ul>
         <h1>
-            <a><i class="fa fa-spinner fa-pulse fa-1x fa-fw margin-bottom"></i>
-                <a href="https://github.com/Mark-Han/Mark-Han.github.io/edit/master/Mark.html">
-                    Mark Han's World...</a>
+
+            <i class="fa-solid fa-spinner fa-spin" style="color: #337AB7;"></i>
+            <a href="https://github.com/Mark-Han/Mark-Han.github.io/edit/master/Mark.html">
+                Mark Han's World...</a>
         </h1>
         <hr>
         <p>
-            <i id="Literature" class="fa fa-2x fa-google-plus-square" aria-hidden="true"></i> <code>Literature</code></p>
-        <blockquote>
+
+            <i id="AI" class="fa-solid fa-lg fa-fingerprint"></i> <code>AI</code>
+
+        </p>
+        <blockquote class="blockquote">
+            <a href="https://huggingface.co/" title="人工智能最大社区">HF</a> |
+            <a href="https://www.chatbase.co/" title="ChatBase">CB</a> |
+            <a href="https://spline.design/home" title="智能设计">Spline</a> |
+            <a href="https://www.yoya.ai/" title="无代码搭建AI应用">Yoya</a>
+
+        </blockquote>
+        <hr>
+        <p>
+            <i id="Literature" class="fa-brands fa-battle-net fa-lg"></i> <code>Literature</code>
+        </p>
+        <blockquote class="blockquote">
             <p>
                 <a href="http://www.80lib.com/user/index" target="_blank">80Lib</a> |
                 <a href="https://www.ixsdh.com/" title="学术导航">xsdh</a> |
-                <a href="https://panda321.com/" title="搜索下载大全">panda</a>
+                <a href="https://panda321.com/" title="搜索下载大全">panda</a> |
                 <a href="https://www.medpeer.cn/" title="各种数据库">MedPeer</a> |
                 <a href="https://www.semanticscholar.org/">semantic</a> |
                 <a href="https://openknowledgemaps.org/index" title="论文知识图谱">KnowMap</a> |
@@ -85,24 +132,27 @@
                 <a href="http://nature.com" target="_blank">Nature</a> |
                 <a href="http://journals.aps.org/" target="_blank">APS</a> |
                 <a href="http://engineering.missouri.edu/person/chenz/">Zhen</a> |
-                <a href="http://v.163.com/special/opencourse/equations.html" title="MIT的ODE课程" target="_blank">ODE@MIT</a>
+                <a href="http://v.163.com/special/opencourse/equations.html" title="MIT的ODE课程"
+                    target="_blank">ODE@MIT</a>
             </p>
             <p>
                 <a href="https://www.google.com/ncr">Google</a> |
                 <a href="https://mail.google.com/mail">Gmail</a> |
                 <a href="http://www.letpub.com.cn/index.php?page=sci_writing" target="_blank">LetPub</a> |
-                <a href="https://www.elsevier.com/connect/11-steps-to-structuring-a-science-paper-editors-will-take-seriously#step11" target="_blank">PaperWrite</a> |
+                <a href="https://www.elsevier.com/connect/11-steps-to-structuring-a-science-paper-editors-will-take-seriously#step11"
+                    target="_blank">PaperWrite</a> |
                 <a href="https://www.numberempire.com/graphingcalculator.php">funcplot</a> |
                 <a href="http://www.fooplot.com/">fooplot</a> |
-                <a href="https://www.onlineocr.net/zh_hans/">OCR</a>
+                <a href="https://www.onlineocr.net/zh_hans/">OCR</a> |
+                <a href="https://hemingwayapp.com/" title="海明威润色">Haimingwei</a>
             </p>
         </blockquote>
         <hr>
         <p>
-            <i id="Tools" class="fa fa-2x fa-link" aria-hidden="true"></i>
+            <i id="Tools" class="fa fa-lg fa-link" aria-hidden="true"></i>
             <code>Tools</code>
         </p>
-        <blockquote>
+        <blockquote class="blockquote">
             <p>
                 <a href="https://webjike.com/course.html">xiaoDai</a> |
                 <a href="https://toolsdar.com/">toolStar</a> |
@@ -121,8 +171,8 @@
             </p>
         </blockquote>
         <hr>
-        <p><i id="Dicts" class="fa fa-2x fa-tags" aria-hidden="true"></i> <code>Dicts</code></p>
-        <blockquote>
+        <p><i id="Dicts" class="fa fa-lg fa-tags" aria-hidden="true"></i> <code>Dicts</code></p>
+        <blockquote class="blockquote">
             <p>
                 <a href="http://www.merriam-webster.com/" target="_blank">Webster</a> |
                 <a href="http://dictionary.cambridge.org/us/" target="_blank">Cambridge</a> |
@@ -131,23 +181,24 @@
                 <a href="http://www.oxforddictionaries.com/" target="_blank">Oxford</a> |
                 <a href="https://en.wiktionary.org/wiki/Wiktionary:Main_Page" title="">wikidic</a> |
                 <a href="http://wordnet-online.freedicts.com/">Wordnet</a>
-                <p></p>
-                <a href="http://www.thesaurus.com/" target="_blank">synonyms</a> |
-                <a href="http://www.ozdic.com/" target="_blank">ozdic</a> |
-                <a href="https://prowritingaid.com/Free-Online-Collocations-Dictionary.aspx" target="_blank"> prowritingaid</a> |
-                <a href="http://www.vocabulary.com/dictionary/" target="_blank">Vocabulary</a> |
-                <a href="http://www.yourdictionary.com/" target="_blank">Ur Dict</a> |
-                <a href="http://www.thefreedictionary.com/" target="_blank">Free</a> |
-                <a href="http://dictionary.reference.com/" target="_blank">Dict</a> |
-                <a href="https://www.wordhippo.com/" target="_blank">WordHippo</a>
+            <p></p>
+            <a href="http://www.thesaurus.com/" target="_blank">synonyms</a> |
+            <a href="http://www.ozdic.com/" target="_blank">ozdic</a> |
+            <a href="https://prowritingaid.com/Free-Online-Collocations-Dictionary.aspx" target="_blank">
+                prowritingaid</a> |
+            <a href="http://www.vocabulary.com/dictionary/" target="_blank">Vocabulary</a> |
+            <a href="http://www.yourdictionary.com/" target="_blank">Ur Dict</a> |
+            <a href="http://www.thefreedictionary.com/" target="_blank">Free</a> |
+            <a href="http://dictionary.reference.com/" target="_blank">Dict</a> |
+            <a href="https://www.wordhippo.com/" target="_blank">WordHippo</a>
             </p>
         </blockquote>
         <hr>
         <P>
-            <i id="Forum" class="fa  fa-2x fa-github" aria-hidden="true"> </i>
+            <i id="Forum" class="fa  fa-lg fa-github" aria-hidden="true"> </i>
             <code>Forum</code>
         </P>
-        <blockquote>
+        <blockquote class="blockquote">
             <p>
                 <a href="http://fcode.cn" target="_blank">Fcode</a> |
                 <a href="https://readthedocs.org/">DOC</a> |
@@ -160,8 +211,9 @@
         </blockquote>
         <hr>
         <p>
-            <i id="Typing" class="fa fa-2x fa-viadeo-square" aria-hidden="true"></i> <code>Typing</code></p>
-        <blockquote>
+            <i id="Typing" class="fa fa-lg fa-viadeo-square" aria-hidden="true"></i> <code>Typing</code>
+        </p>
+        <blockquote class="blockquote">
             <p>
                 <a href="http://ctan.org/" target="_blank">CTAN</a> |
                 <a href="https://latex-project.org/">Project </a> |
@@ -178,8 +230,9 @@
         </blockquote>
         <hr>
         <p>
-            <i id="Mat" class="fa fa-2x fa-cogs" aria-hidden="true"></i> <code>Mats</code></p>
-        <blockquote>
+            <i id="Mat" class="fa fa-lg fa-cogs" aria-hidden="true"></i> <code>Mats</code>
+        </p>
+        <blockquote class="blockquote">
             <p>
                 <a href="http://matweb.com" target="_blank">MatWeb</a> |
                 <a href="https://www.engineeringtoolbox.com/" target="_blank">EngBox</a>
@@ -187,10 +240,10 @@
         </blockquote>
         <hr>
         <p>
-            <i id="Linux" class="fa  fa-2x fa-linux" aria-hidden="true"> </i>
+            <i id="Linux" class="fa  fa-lg fa-linux" aria-hidden="true"> </i>
             <code>Linux</code>
         </p>
-        <blockquote>
+        <blockquote class="blockquote">
             <p>
                 <a href="http://www.rpmfind.net/">RPM</a> |
                 <a href="http://tipsonubuntu.com/">tps</a> |
@@ -203,9 +256,9 @@
         </blockquote>
         <hr>
         <p>
-            <i id="Icon" class="fa fa-2x fa-500px" aria-hidden="true"></i><code>Icon</code>
+            <i id="Icon" class="fa fa-lg fa-500px" aria-hidden="true"></i><code>Icon</code>
         </p>
-        <blockquote>
+        <blockquote class="blockquote">
             <p>
                 <a href="https://www.easyicon.net/">EasyIcon</a> |
                 <a href="https://www.iconfont.cn/">Alicon</a> |
@@ -221,10 +274,10 @@
         </blockquote>
         <hr>
         <p>
-            <i id="Designing" class="fa fa-2x fa-apple" aria-hidden="true"></i>
+            <i id="Designing" class="fa fa-lg fa-apple" aria-hidden="true"></i>
             <a href="https://i.mi.com/" target="_blank"> <code>Designing</code></a>
         </p>
-        <blockquote>
+        <blockquote class="blockquote">
             <p>
                 <a href="https://gamma.app/">Gamma</a> |
                 <a href="http://sandunppt.com/">SanDun</a> |
@@ -245,32 +298,34 @@
         </blockquote>
         <hr>
         <p>
-            <i id="Code" class="fa fa-2x fa-code" aria-hidden="true"> </i>
+            <i id="Code" class="fa fa-lg fa-code" aria-hidden="true"> </i>
             <code>Web Coding</code>
-            <blockquote>
-                <p>
-                    <a href="http://getbootstrap.com/">Bootstrap</a> |
-                    <a href="http://codeguide.co/">CodeGuide</a> |
-                    <a href="https://www.freecodecamp.com">FCC</a> |
-                    <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a> |
-                    <a href="http://w3schools.bootcss.com">w3</a> |
-                    <a href="http://caniuse.com/#home">caniuse</a> |
-                    <a href="https://validator.w3.org/">W3Check</a> |
-                    <a href="http://codepen.io">CodePen</a> |
-                    <a href="http://www.w3school.com.cn/index.html" target="_blank">W3</a> |
-                    <a href="http://colorbrewer2.org/">ColorBrever</a> |
-                </p>
-                <p>
-                    <a href="https://fonts.google.com/">GFonts</a> |
-                    <a href="https://www.segmentfault.com">SF</a> |
-                    <a href="https://gitee.com/markhan/projects">Gitee</a> |
-                    <a href="http://www.worldhello.net/gotgit/index.html">JX_Git</a> |
-                    <a href="https://guides.github.com/" target="_blank">GitHub</a> |
-                    <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">ColorPicker</a>
-                </p>
-            </blockquote>
+        <blockquote class="blockquote">
+            <p>
+                <a href="http://getbootstrap.com/">Bootstrap</a> |
+                <a href="http://codeguide.co/">CodeGuide</a> |
+                <a href="https://www.freecodecamp.com">FCC</a> |
+                <a href="https://developer.mozilla.org/en-US/docs/Web">MDN</a> |
+                <a href="http://w3schools.bootcss.com">w3</a> |
+                <a href="http://caniuse.com/#home">caniuse</a> |
+                <a href="https://validator.w3.org/">W3Check</a> |
+                <a href="http://codepen.io">CodePen</a> |
+                <a href="http://www.w3school.com.cn/index.html" target="_blank">W3</a> |
+                <a href="http://colorbrewer2.org/">ColorBrever</a> |
+            </p>
+            <p>
+                <a href="https://fonts.google.com/">GFonts</a> |
+                <a href="https://www.segmentfault.com">SF</a> |
+                <a href="https://gitee.com/markhan/projects">Gitee</a> |
+                <a href="http://www.worldhello.net/gotgit/index.html">JX_Git</a> |
+                <a href="https://guides.github.com/" target="_blank">GitHub</a> |
+                <a href="https://developer.mozilla.org/en-US/docs/Web/CSS/CSS_Colors/Color_picker_tool">ColorPicker</a>
+            </p>
+        </blockquote>
         </p>
     </div>
+    <script async src="https://www.yoya.ai/sdk.js" id=3a986ddb-fff7-4dc9-abbc-2226f1afda81></script>
+
 </body>
 
 </html>
