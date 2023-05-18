@@ -1,68 +1,21 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <title>Mark Han's World...</title>
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <link rel="icon" type="image/png" href="favicon.png">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/94ad78f6d0.js" crossorigin="anonymous"></script>
     <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="jquery.pin.js"></script>
-    <style type="text/css">
-        body {
-            background-color: ;
-        }
-
-        /* adds some margin and padding to the container */
-        .container {
-            margin-top: 3rem;
-            padding: 9rem;
-            padding-top: 6rem;
-            /* border-radius: 5rem; */
-            border-top-left-radius: 5rem;
-            border-top-right-radius: 5rem;
-            box-shadow: 0 1px 20px 0 rgba(0, 0, 0, .1);
-            background-color: white;
-        }
-
-        /* Remove underline from link */
-        a {
-            text-decoration: none;
-            color: #337AB7;
-        }
-
-        a:hover {
-            text-decoration: underline;
-        }
-
-        ul {
-            list-style-type: none;
-        }
-
-        hr {
-            margin: 1rem 0;
-            color: inherit;
-            background-color: currentColor;
-            border: 0;
-            opacity: 0.10;
-        }
-
-        h1 {
-            margin-top: 4rem;
-        }
-
-        i {
-            color: lightpink;
-        }
-    </style>
-
+    <link rel="stylesheet" href="styles.css">
 </head>
 
 <body>
-   
     <div class="container">
+
         <ul class=" navbar navbar-brand" style="border-bottom: none;">
             <li class="nav-item"><a href="#Code">Code</a></li>
             <li class="nav-item"><a href="#Linux">Linux</a></li>
@@ -78,23 +31,26 @@
             <li class="nav-item"><a href="#AI">AI</a></li>
         </ul>
         <h1>
-
-            <i class="fa-solid fa-spinner fa-spin" style="color: #337AB7;"></i>
-            <a href="https://github.com/Mark-Han/Mark-Han.github.io/edit/master/Mark.html">
-                Mark Han's World...</a>
+            <div class="loading-effect-title">
+                <div class="orbit-spinner">
+                    <div class="orbit"></div>
+                    <div class="orbit"></div>
+                    <div class="orbit"></div>
+                </div>
+                <a href="https://github.com/Mark-Han/Mark-Han.github.io/edit/master/Mark.html">
+                    Mark Han's World...</a>
+            </div>
         </h1>
         <hr>
         <p>
-
             <i id="AI" class="fa-solid fa-lg fa-fingerprint"></i> <code>AI</code>
-
         </p>
         <blockquote class="blockquote">
             <a href="https://huggingface.co/" title="人工智能最大社区">HF</a> |
             <a href="https://www.chatbase.co/" title="ChatBase">CB</a> |
             <a href="https://spline.design/home" title="智能设计">Spline</a> |
-            <a href="https://www.yoya.ai/" title="无代码搭建AI应用">Yoya</a>
-
+            <a href="https://www.yoya.ai/" title="无代码搭建AI应用">Yoya</a> |
+            <a href="https://dify.ai/" title="ChatBot">Dify</a>
         </blockquote>
         <hr>
         <p>
@@ -324,8 +280,8 @@
         </blockquote>
         </p>
     </div>
-    <script async src="https://www.yoya.ai/sdk.js" id=3a986ddb-fff7-4dc9-abbc-2226f1afda81></script>
-
+    <!-- it's stupid, just remove it -->
+    <!-- <script async src="https://www.yoya.ai/sdk.js" id=3a986ddb-fff7-4dc9-abbc-2226f1afda81></script> -->
 </body>
 
 </html>
