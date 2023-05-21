@@ -4,33 +4,31 @@
 <head>
     <meta charset="utf-8">
     <title>Mark Han's World...</title>
-
-    <!-- <link rel="icon" type="image/png" href="data:image/png;base64,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"> -->
     <link rel="icon" type="image/png" href="https://cdn.jsdelivr.net/npm/twemoji@11.3.0/2/svg/1f987.svg">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css">
     <script src="https://kit.fontawesome.com/94ad78f6d0.js" crossorigin="anonymous"></script>
     <script src="http://libs.baidu.com/jquery/1.10.2/jquery.min.js"></script>
     <script src="jquery.pin.js"></script>
-    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="stylesheets/mark_styles.css">
 </head>
 
 <body>
 
     <div class="container">
         <ul class=" navbar navbar-brand" style="border-bottom: none;">
+            <li class="nav-item"><a href="#AI">AI</a></li>
+            <li class="active"><a href="#Literature">Literature</a></li>
+            <li class="nav-item"><a href="#Tools">Tools</a></li>
             <li class="nav-item"><a href="#Code">Code</a></li>
             <li class="nav-item"><a href="#Linux">Linux</a></li>
+            <li class="nav-item"><a href="#Dicts">Dicts</a></li>
             <li class="nav-item"><a href="#Forum">Forum</a></li>
             <li class="nav-item"><a href="#Icon">Icon</a></li>
             <li class="nav-item"><a href="#Nav">Nav</a></li>
-            <li class="active"><a href="#Literature">Literature</a></li>
             <li class="nav-item"><a href="#Typing">Typing</a></li>
-            <li class="nav-item"><a href="#Dicts">Dicts</a></li>
             <li class="nav-item"><a href="#Designing">Designing</a></li>
-            <li class="nav-item"><a href="#Tools">Tools</a></li>
             <li class="nav-item"><a href="#Mat">Mat</a></li>
-            <li class="nav-item"><a href="#AI">AI</a></li>
         </ul>
         <h1>
             <div class="loading-effect-title">
