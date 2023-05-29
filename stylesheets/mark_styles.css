@@ -2,6 +2,9 @@
   font-family: 'Segoe UI';
   src: url('fonts/segoeui.ttf');
 }
+body {
+    font-family: 'Segoe UI', sans-serif;
+  }
 
 /* adds some margin and padding to the container */
 .container {
